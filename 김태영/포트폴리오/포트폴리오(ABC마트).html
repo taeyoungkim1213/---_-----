@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../css/포트폴리오(ABC마트).css">
+    <link rel="stylesheet" href="../css/common.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header_top_box">
+                <div class="header_top">
+                    <!-- 반응형 햄버거버튼 만들기 -->
+                    <div class="logo">
+                        <a href="./포트폴리오(ABC마트).html"><img src="https://image.a-rt.com/art/system/site/202207/1658299296317.png" alt=""></a>
+                    </div>
+                   <!-- 로그인 회원가입 만들기 -->
+                </div>
+            </div>
+            <!-- 스크롤 내리면 고정시키기 -->
+           <div class="header_bot_box">
+            <div class="header_bottom"> 
+                <ul>
+                    <li class="menu"><a href="#">BRAND</a></li>
+                    <li class="menu"><a href="">MEN</a></li>
+                    <li class="menu"><a href="">WOMEN</a></li>
+                    <li class="menu"><a href="">WOMEN</a></li>
+                    <li class="menu"><a href="">WOMEN</a></li>
+                    <li class="menu"><a href="">WOMEN</a></li>
+                    <li class="bar"></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="search...">
+                    <img src="https://abcmart.a-rt.com/static/images/common/comm_header_icon_search.png" alt="">
+                </div>
+         </div>
+           </div>
+        </header>
+    </div>
+
+    
+<script>
+//메뉴아래 바 따라 댕기기****************************************
+    $(document).ready(function() {
+        $('.bar').css({
+            width: $('.menu').eq(0).innerWidth()
+        })
+        $('.menu').mouseenter(function(){ 
+            let li_left = $(this).offset().left;
+            let ul_left = $('ul').offset().left;
+            $('.bar').css({
+                left: $(this).position().left,
+                width: $(this).innerWidth() 
+            })  
+        })
+    })
+//메뉴아래 바 따라 댕기기 끝****************************************
+</script>
+</body>
+</html>
