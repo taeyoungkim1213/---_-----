@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .header {
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            background-color: pink;
+
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        .nav_ul {
+            display: flex;
+        }
+        .nav_ul li {
+            border: 1px solid;
+        }
+        .nav_ul a {
+            padding: 5px 30px;
+            background-color: orange;
+        }
+
+
+        .main {
+            margin-top: 100px;
+        }
+        .sec {
+            width: 100%;
+            height: 1000px;
+            font-size: 150px;
+            color: #fff;
+        }
+        #sec1 { background: hotpink;}
+        #sec2 { background: green;}
+        #sec3 { background: blue;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul class="nav_ul">
+            <li><a href="#sec1">meun1</a></li>
+            <li><a href="#sec2">meun2</a></li>
+            <li><a href="#sec3">meun3</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="sec" id="sec1">sec1</div>
+        <div class="sec" id="sec2">sec2</div>
+        <div class="sec" id="sec3">sec3</div>
+    </div>
+<script>
+$(document).ready(function() {
+    let chk = true;
+    let timer = 500;
+
+    // mousewheel - ie, 크롬, 오페라, 사파리, 엣지
+    // DOMMouseScroll - 파이어폭스
+    $('.sec').on('mousewheel DOMMouseScroll', function() {
+        console.log($(this), event.wheelDelta)
+    /*
+        event.wheelDelta => 마우스 휠 방향감지
+                            내리면 -120
+                            올리면  120
+    */
+        // 휠 돌렸을때 다음 섹션 존재 여부
+        console.log($(this).next().length)
+
+        event.preventDefault();
+        if(chk) {
+            // 휠 막기
+            chk = false;
+            setTimeout(function() {
+                chk = true;
+            }, timer)
+            
+            let s_top_pos = 0;
+            // 휠 아래로 돌렸을때 다음 섹션 있는지 확인
+            if(event.wheelDelta<0 && $(this).next().length > 0 ) {
+                // 다음 섹션의 o_top 값을 s_top에 적용
+                // $('html, body').stop().animate({
+                //     scrollTop: $(this).next().offset().top - 100
+                // }, timer, 'linear')
+                s_move($(this).next().offset().top - 100)
+            }
+            
+            // 휠 위로 돌렸을때 위에 섹션 있는지 확인
+            else if(event.wheelDelta>0 && $(this).prev().length > 0 ) {
+                // 윗 섹션의 o_top 값을 s_top에 적용
+                // $('html, body').stop().animate({
+                //     scrollTop: $(this).prev().offset().top - 100
+                // }, timer, 'linear')
+                s_move($(this).prev().offset().top - 100)
+            }
+ 
+        }
+    })
+
+    function s_move(tmp_pos) {
+        $('html, body').stop().animate({
+            scrollTop: tmp_pos
+        }, timer, 'linear')
+    }
+
+
+    $('.nav_ul a').click(function(){ 
+        event.preventDefault(); 
+ 
+        let href = $(this).attr('href');
+        s_move($(href).offset().top - 100) 
+    })
+})
+</script>
+</body>
+</html>
