@@ -43,7 +43,33 @@
                     <li class="menu"><a href="">SALE</a></li>
                     <li class="bar"></li>
                     <div class="B_pan">
-                        
+                        <div class="contents_area">
+                            <div class="pan_item" id="KIND">
+                                <div class="pan_inner_box">
+                                  1
+                                </div>
+                            </div>
+                            <div class="pan_item" id="MEN">
+                                <div class="pan_inner_box">
+                                    2
+                                </div>
+                            </div>
+                            <div class="pan_item" id="WOMEN">
+                                <div class="pan_inner_box">
+                                    3
+                                </div>
+                            </div>
+                            <div class="pan_item" id="KIDS">
+                                <div class="pan_inner_box">
+                                    4
+                                </div>
+                            </div>
+                            <div class="pan_item" id="SALE">
+                                <div class="pan_inner_box">
+                                    5
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </ul>
                 <div class="search">
@@ -237,9 +263,33 @@
             }
         })
 //헤더바텀 fix 끝****************************************
-$('.swiper-button-next').click(function() {
+
+//메뉴판  호버시 B_pan 나오게하기
+         $('.menu, .B_pan').hover(function(){
+
+
+            // 100판 펼치기
+            $('.B_pan').addClass('B_pan_active')
+
+
+           
+            
+            // if($(this).prop('class') == "menu_item") {
+            if($(this).hasClass('menu')) {
+            // if($(this).prop('class') != "pan") {
+            // if(!$(this).hasClass('pan')) {
+                // 판 안에 특정 번째꺼 나타나게 하기 - display: block 
+                $('.pan_item').removeClass('B_pan_active')
+                $('.pan_item').eq($(this).index()).addClass('B_pan_active')
+            }
+
+
+
+        }, function(){
+            // 100판 접기
+            $('.B_pan').removeClass('B_pan_active')
+        })
     
-})
 </script>
 
 
