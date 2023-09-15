@@ -6,7 +6,10 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <link rel="stylesheet" href="../ABC_css/포트폴리오(ABC마트).css">
-    <link rel="stylesheet" href="/js/jq-1.12.4.js">
+    <link rel="stylesheet" href="../ABC_css/common.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 </head>
 <body>
@@ -14,31 +17,34 @@
         <header class="header">
             <div class="header_top_box">
                 <div class="header_top">
-                    <!-- 반응형 햄버거버튼 만들기 -->
+<!-- 반응형 햄버거버튼 만들기 -->
                     <div class="logo">
                         <a href="./포트폴리오(ABC마트).html"><img src="https://image.a-rt.com/art/system/site/202207/1658299296317.png" alt=""></a>
                     </div>
-                   <!-- 로그인 회원가입 만들기 -->
+<!-- 로그인 회원가입 만들기 -->
                    <div class="join">
                         <a href="./로그인회면(ABC).html">
-                            <img src="../img/로그인.png" alt="">
+                            <img src="../ABC_img/로그인.png" alt="">
                         </a>
                         <a href="./회원가입화면.html">
-                            <img src="../img/회원가입.png" alt="">
+                            <img src="../ABC_img/회원가입.png" alt="">
                         </a>
                    </div>
                 </div>
             </div>
-            <!-- 스크롤 내리면 고정시키기 -->
+<!-- 스크롤 내리면 고정시키기 -->
            <div class="header_bot_box">
             <div class="header_bottom"> 
                 <ul>
-                    <li class="menu"><a href="#">BRAND</a></li>
+                    <li class="menu"><a href="#">KIND OF</a></li>
                     <li class="menu"><a href="">MEN</a></li>
                     <li class="menu"><a href="">WOMEN</a></li>
                     <li class="menu"><a href="">KIDS</a></li>
                     <li class="menu"><a href="">SALE</a></li>
                     <li class="bar"></li>
+                    <div class="B_pan">
+                        
+                    </div>
                 </ul>
                 <div class="search">
                     <input type="text" placeholder="search...">
@@ -47,10 +53,138 @@
          </div>
            </div>
         </header>
-    </div>
+        <div class="container">
+<!-- Swiper -->
+             <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="플랫라이트">
+                            <div class="gallbox">
+                                <p class="g_p1">항상 편안한 착용감 <br>플랫라이트
+                                    </p>
+                                    <hr>
+                                <p class="g_p2">보러가기《</p>
+                                <img src="../ABC_img/메인배너1.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="gallbox">
+                                <p class="g_p1 txt_ani">가나달라</p>
+                                <hr>
+                                <p class="g_p2">보러가기《</p>
+                                <img src="../ABC_img/메인배너2.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="gallbox">
+                                <p class="g_p1">오늘의 상품</p>
+                                <hr>
+                                <p class="g_p2">보러가기《</p>
+                                <img src="../ABC_img/메인배너3.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="gallbox">
+                                <p class="g_p1">오늘의 상품</p>
+                                <hr>
+                                <p class="g_p2">보러가기《</p>
+                                <img src="../ABC_img/메인배너4.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="gallbox">
+                                <p class="g_p1" style="color: black;">오늘의 상품</p>
+                                <hr>
+                                <p class="g_p2">보러가기《</p>
+                                <img src="../ABC_img/메인배너5.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="gallbox">
+                                <p class="g_p1">오늘의 상품</p>
+                                <hr>
+                                <p class="g_p2">보러가기《</p>
+                                <img src="../ABC_img/메인배너6.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="gallbox">
+                                <p class="g_p1">오늘의 상품</p>
+                                <hr>
+                                <p class="g_p2">보러가기《</p>
+                                <img src="../ABC_img/메인배너7.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="gallbox">
+                                <p class="g_p1">오늘의 상품</p>
+                                <hr>
+                                <p class="g_p2">보러가기《</p>
+                                <img src="../ABC_img/메인배너8.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
 
-    
+<!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <hr>
+<!-- 슬라이드 종료지점 -->
+    </div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
 <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1, // 칸 수
+        // spaceBetween: 30, //gap
+        // freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+         // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000, // 몇초마다 슬라이드 이동할지
+        },
+        speed: 500, // 몇초만에 left 0 으로 도착할지
+        loop: true,
+        direction: 'horizontal', //horizontal,vertical 배치 방향
+        effect: 'coverflow' // 'slide', 'fade', 'cube', 'coverflow', 'flip' or 'creative'
+    });
+    $('.container').hover(function(){
+        swiper.autoplay.stop();
+    }, function(){
+        swiper.autoplay.start()
+    })
+    
+</script>
+<script>
+    
 //메뉴아래 바 따라 댕기기****************************************
     $(document).ready(function() {
         $('.bar').css({
@@ -60,12 +194,55 @@
             let li_left = $(this).offset().left;
             let ul_left = $('ul').offset().left;
             $('.bar').css({
+                opacity: '1',
                 left: $(this).position().left,
                 width: $(this).innerWidth() 
             })  
         })
+        $('.menu').mouseleave(function(){ 
+            let li_left = $(this).offset().left;
+            let ul_left = $('ul').offset().left;
+            $('.bar').css({
+                opacity: '0'
+            })  
+        })
     })
 //메뉴아래 바 따라 댕기기 끝****************************************
+
+//헤더바텀 fix****************************************
+        let h_o_top = $('.header_bot_box').offset().top
+        $(window).scroll(function(){
+            console.log(h_o_top, $(window).scrollTop())
+
+            if(h_o_top <= $(window).scrollTop() ) {
+                $('.header_bot_box').css({
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    background: 'rgba(0,0,0,0.5)',
+                    height: 50
+                })
+                $('.container').css({
+                    magintop: '50px'
+                })
+            }
+            else {
+                $('.header_bot_box').css({
+                    position: 'static',
+                    // top: 80,
+                    // left: 0,
+                    background: '#333',
+                    // height: 100
+                })
+            }
+        })
+//헤더바텀 fix 끝****************************************
+$('.swiper-button-next').click(function() {
+    
+})
 </script>
+
+
+
 </body>
 </html>
