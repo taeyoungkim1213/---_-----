@@ -26,6 +26,9 @@
     padding-top: 10px;
     height: 61px;
 }
+.join img:hover{
+    scale: 1.1;
+}
 
 /* 로고 */
 .logo {
