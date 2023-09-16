@@ -466,7 +466,7 @@
         spaceBetween: 30, //gap
         // freeMode: true,
         pagination: {
-            el: ".swiper-pagination",
+            // el: ".swiper-pagination",
             clickable: true,
         },
          // Navigation arrows
@@ -482,7 +482,7 @@
         direction: 'horizontal', //horizontal,vertical 배치 방향
         effect: 'slide' // 'slide', 'fade', 'cube', 'coverflow', 'flip' or 'creative'
     });
-    $('.container').hover(function(){
+    $('.hot_deal_slide_box').hover(function(){
         swiper.autoplay.stop();
     }, function(){
         swiper.autoplay.start()

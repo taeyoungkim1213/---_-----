@@ -290,7 +290,7 @@ section{
     width: 20%;
     float: left;
     height: 100%;
-    border-right: 1px solid rgba(55, 55, 55, 0.5);
+    /* border-right: 1px solid rgba(55, 55, 55, 0.5); */
 }
 .hot_deal_title h2{
     font-size: 32px;
