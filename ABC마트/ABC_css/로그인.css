@@ -1,6 +1,8 @@
 /* 헤더탑 */
+body{background-color: #cccccc;}
 .header_top_box{
     width: 100%;
+    background-color: #fff;
 }
 .header_top{
     max-width: 1200px;
@@ -8,6 +10,7 @@
     margin: 0 auto;
     position: relative;
     left: 0;
+    
 }
 .join{
     width: 114px;
@@ -28,46 +31,6 @@
 }
 .join img:hover{
     scale: 1.1;
-}
-/* 햄버거 버튼 */
-.hamberg {
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    padding: 7px;
-    margin-top: 15px;
-    box-sizing: border-box;
-    float: left;
-    position: relative;
-
-    display: none;
-}
-.line {
-    width: 100%;
-    height: 5px;
-    background-color: #333333;
-    margin: 5px 0;
-
-    
-}
-#line_top, #line_bot {
-    transition: all 0.5s;
-}
-.menu_pan {
-    width: 300px;
-    height: calc(100vh - 50px);
-    background-color: rgba(255, 255, 255, 0.75);
-    opacity: 0;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    z-index: 9  ;
-    transition: all 0.5s;
-}
-.menu_pan_active {
-    left: -160px;
-    opacity: 1;
 }
 
 /* 로고 */
@@ -186,8 +149,7 @@
 .logo_txt{width: 100%; height: 30px;text-align: center;color: black
     ;font-weight: 900;}
 /* 브랜드판 종료 지점 */
-
-/* MEN women kids  판 시작 지점 */
+/* MEN 판 시작 지점 */
 .MEN_box{
     width: 100%;
     height: 100%;
@@ -248,91 +210,90 @@
     top: 14px;
     right: -37px;
 }
-/* 메인배너 스와이퍼 슬라이드 */
-.container{ height: 32vw;}
-.gallbox img {display: block;width: 100%; height:100%;}
+/* 헤더부분 종료지점 */
+/* 로그인창 메인 시작 지점 */
 
-/* 슬라이드 글씨 */
-.g_p1{
-    position: absolute;
-    text-align: center;
-    color: #fff;
-    border-radius: 1%;
-    font-weight: 900;
-    padding: 10px;
-    top: 30%;
-    left: 10%;
-    font-size: 36px;
+button{cursor: pointer;}
+.loginbox{
+    width: 780px;
+    height: 550px;
+    margin: 100px auto;
+    border-radius: 42px ;
+    overflow: hidden;
 }
-.g_p2{
-    position: absolute;
-    text-align: center;
-    color: #fff;
-    border-radius: 1%;
-    font-weight: 900;
-    padding: 10px;
-    top: 70%;
-    left: 10%;
-    font-size: 20px;
-    background: rgba(44, 44, 44, 0.5);
-}
-/* 섹션 핫딜부분 시작지점 */
-section{
+.loginbox h2{
     width: 100%;
-}
-.hot_deal_box{  
-    max-width: 1200px;
-    height: 600px;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-.hot_deal_title{
-    width: 20%;
-    float: left;
-    height: 100%;
-    border-right: 1px solid rgba(55, 55, 55, 0.5);
-}
-.hot_deal_title h2{
-    padding-top: 200px;
-    font-size: 32px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
     font-weight: 900;
+    background-color: #fff;
 }
-.hot_deal_title p{
-    font-weight: 500;
-    font-size: 14px;
-    color: grey;
-    margin: 5px;
+.loginbox form{
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    padding: 60px;
+    box-sizing: border-box;
 }
-.going_deal{width: 100%; text-align: center;}
-.going_deal a{
-    font-size: 14px;
-    font-weight: 500;
+.loginbox fieldset{
+    border: none;
+}
+.loginbox legend{
+    position: absolute;
+    left: -999em;
+}
+.loginbox label{
+    display: block;
+    font-size: 17px;
     color: #333;
+    margin-bottom: 10px;
 }
-.hot_deal_slide_box{
-    width: 70%;
-    float: right;
-    height: 100%;
-    background-color: gray;
-}
-.swiper2{
+.loginbox input{
+    display: block;
     width: 100%;
-    height: 600px;
+    height: 50px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: #ededed;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* 650때 햄버거 넣기 */
-@media (max-width:650px){
-    .hamberg{display: block;}
-    .menu_pan{display: block;}
-} 
+.loginbox ul{
+    width: 100%;
+    text-align: right;
+}
+.loginbox li{
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+}
+.loginbox li:last-child{
+    border-left: 1px solid #333;
+    padding-left: 10px;
+    margin-left: 4px;
+}
+.loginbox a{
+    color: #333;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}
+.loginbox button{
+    display: block;
+    width: 220px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    background-color: #1673ea;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+}
+/* 푸터 영역 */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+}
