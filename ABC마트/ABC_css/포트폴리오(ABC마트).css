@@ -406,15 +406,83 @@ section{
     font-weight: normal;
     color: gray;
 }
+/* mds_pick_ 시작지점  */
+.mds_pick_box{  
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.mds_pick_title{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
    
+}
+.mds_pick_list{
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+.mds_pick_list label{
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+.mds_pick_list label:hover{color: #ee1c25;}
+.md_item_box{width: 100%;}
+.md_item_box li{
+    width: calc((100% - (4 * 20px))/ 5);
+    /* height: 374px; */
+}
+.mditem_img img{width: 100%;}
+.mditem_img{width: 100%; height: 224px;}
+.mditem_txt{width: 100%; height: 150px; padding: 20px; box-sizing: border-box;}
+.mditem_txt h3{
+    margin: 5px 0;
+    font-weight: 900;
+}
+.mditem_txt p{
+    margin: 5px 0;
+    color: #7c7878;
+    font-size: 13px;
+}
+input[name="md"]{display: none;}
+.new_ul{width: 100%; display: flex; flex-wrap: wrap; gap: 20px; display: none;}
+.slelect_ul{width: 100%; display: flex; flex-wrap: wrap; gap: 20px; display: none;}
+.dino_ul{width: 100%; display: flex; flex-wrap: wrap; gap: 20px; display: none;}
+.nike_ul{width: 100%; display: flex; flex-wrap: wrap; gap: 20px; display: none;}
 
+#md_1:checked ~ .mds_pick_list label[ for="md_1"]{ border-bottom: 5px solid #ee1c25;}
+#md_2:checked ~ .mds_pick_list label[ for="md_2"]{ border-bottom: 5px solid #ee1c25;}
+#md_3:checked ~ .mds_pick_list label[ for="md_3"]{ border-bottom: 5px solid #ee1c25;}
+#md_4:checked ~ .mds_pick_list label[ for="md_4"]{ border-bottom: 5px solid #ee1c25;}
 
+#md_1:checked ~ .md_item_box .new_ul{display: flex;}
+#md_2:checked ~ .md_item_box .slelect_ul{display: flex;}
+#md_3:checked ~ .md_item_box .dino_ul{ display: flex;}
+#md_4:checked ~ .md_item_box .nike_ul{display: flex;}
 
-
-
-
-
-
+/* trend_box 시작지점 */
+.trend_box{  
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.trend_title{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    
+}
 
 
 /* 650때 햄버거 넣기 */
