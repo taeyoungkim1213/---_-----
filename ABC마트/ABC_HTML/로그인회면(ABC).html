@@ -235,34 +235,6 @@
         })
     //메뉴아래 바 따라 댕기기 끝****************************************
     
-    //헤더바텀 fix****************************************
-            let h_o_top = $('.header_bot_box').offset().top
-            $(window).scroll(function(){
-                console.log(h_o_top, $(window).scrollTop())
-    
-                if(h_o_top <= $(window).scrollTop() ) {
-                    $('.header_bot_box').css({
-                        position: 'fixed',
-                        top: 0,
-                        left: 0,
-                        background: 'rgba(0,0,0,0.5)',
-                        height: 50
-                    })
-                    $('.container').css({
-                        magintop: '50px'
-                    })
-                }
-                else {
-                    $('.header_bot_box').css({
-                        position: 'static',
-                        // top: 80,
-                        // left: 0,
-                        background: '#333',
-                        // height: 100
-                    })
-                }
-            })
-    //헤더바텀 fix 끝****************************************
     
     //메뉴판  호버시 B_pan 나오게하기
              $('.menu, .B_pan').hover(function(){
