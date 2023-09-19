@@ -195,5 +195,48 @@
          </div>
            </div>
         </header>
+        <main>
+            <div class="detail_box">
+                <div class="detail_left_box">
+                    <div class="detail_img_box">
+                        <img src="../ABC_img/md pick/0_new balance/0_MD NEWBALANCE.jpg" alt="">
+                    </div>
+                    <!-- 이미지 아래구간 -->
+                </div>
+                <div class="detail_right_box">
+                    <div class="detail_header">
+                        <div class="detail_header_top">
+                            <span class="abc_icon">ABC-MART</span>
+                            <div class="btn_box">
+                                <button type="button" class="heart_icon" id="heart_icon"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+<script>
+    $(document).ready(function() {
+        let chk = true;
+       
+        $('#heart_icon').click(function(){
+            if(chk == true){
+            $('#heart_icon').css({
+                background: `url(../ABC_img/heart_icon.png) no-repeat -27px 0`
+            })
+            }
+            else if(chk == false){
+                $('#heart_icon').css({
+                background: `url(../ABC_img/heart_icon.png) no-repeat 0 0`
+            })
+            }
+            chk = !chk;
+        });
+
+
+
+    })
+</script>
 </html>
