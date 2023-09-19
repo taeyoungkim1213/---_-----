@@ -1,3 +1,11 @@
+body{overflow-x: hidden;}
+/* 탑버튼 */
+#top_box{position: relative; top: -130px;}
+.top_btn{
+    width: 50px;height: 50px;background-color: #333;text-align: center;
+    line-height: 50px; color: white; border-radius: 50%;
+    position: fixed; bottom: 5%; right: 5%; z-index: 9999999999;
+}
 /* 헤더탑 */
 
 .header_top_box{
@@ -59,10 +67,12 @@
     transition: all 0.5s;
 }
 .menu_pan {
-    width: 300px;
-    height: calc(100vh - 50px);
-    background-color: rgba(255, 255, 255, 0.75);
+    width: 250px;
+    height: calc(100vh - 100px);
+    background-color: rgba(222, 222, 222, 0.8);
     opacity: 0;
+    padding: 10px;
+    box-sizing: border-box;
     display: none;
     position: absolute;
     top: 100%;
@@ -71,9 +81,19 @@
     transition: all 0.5s;
 }
 .menu_pan_active {
-    left: -160px;
+    left: 0;
     opacity: 1;
 }
+.menu_pan a{
+    padding: 20px;
+}
+.menu_pan li {
+    text-align: center;
+    line-height: 4;
+    font-size: 16px;
+    font-weight: 900;
+}
+.menu_pan li:hover{color: #ee1c25;}
 
 /* 로고 */
 .logo {
@@ -132,7 +152,7 @@
 }
 /* 메뉴 판 시작지점 */
 .B_pan{
-    width: 800px;
+    width: 100%;
     /* height: 300px; */
     height: 0;    
     background-color: rgba(200 , 200, 200, 0.8);
@@ -161,7 +181,6 @@
     position: relative;
     top: 93px;
     left: 14px;
-    
 } 
 .brand_title p{
     font-weight: 900;
@@ -176,7 +195,7 @@
 .brand_img_box{
    width: 300px;
     height: 200px;
-    float: right;
+    float: left;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -193,7 +212,7 @@
     width: 100%;
 }   
 .logo_txt{width: 100%; height: 30px;text-align: center;color: black
-    ;font-weight: 900;}
+    ;}
 /* 브랜드판 종료 지점 */
 
 /* MEN women kids  판 시작 지점 */
@@ -237,7 +256,7 @@
 
 /* 헤더바텀 검색창 */
 .search{    
-    width: calc(100% - 580px);
+    width: calc(100% - 600px);
     max-width: 300px;
     float:right;
     margin-right: 42px;
@@ -421,7 +440,6 @@ section{
     font-size: 30px;
     font-weight: 900;
     text-align: center;
-   
 }
 .mds_pick_list{
     display: flex;
@@ -431,6 +449,7 @@ section{
 .mds_pick_list label{
     padding: 10px 0;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 .mds_pick_list label:hover{color: #ee1c25;}
 .md_item_box{width: 100%;}
@@ -439,8 +458,8 @@ section{
     /* height: 374px; */
 }
 .mditem_img img{width: 100%;}
-.mditem_img{width: 100%; height: 224px;}
-.mditem_txt{width: 100%; height: 150px; padding: 20px; box-sizing: border-box;}
+.mditem_img{width: 100%;}
+.mditem_txt{width: 100%; height: 150px; padding: 20px; box-sizing: border-box; text-align: center;}
 .mditem_txt h3{
     margin: 5px 0;
     font-weight: 900;
@@ -465,7 +484,28 @@ input[name="md"]{display: none;}
 #md_2:checked ~ .md_item_box .slelect_ul{display: flex;}
 #md_3:checked ~ .md_item_box .dino_ul{ display: flex;}
 #md_4:checked ~ .md_item_box .nike_ul{display: flex;}
-
+/* 광고판 시작지저므ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.banner_{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    transform: rotateX('angle')
+}
+.banner_left{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+.banner_right{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+.banner_ img{
+    width: 100%;
+    height: 100%;
+}
 /* trend_box 시작지점 */
 .trend_box{  
     max-width: 1200px;
@@ -491,18 +531,206 @@ input[name="md"]{display: none;}
 .trend_list li{
     width: calc((100% - (3 * 20px))/ 4);
 }
-.trend_img_box{width: 100%; height: 356px;}
+.trend_img_box{width: 100%;}
 .trend_img_box img{width: 100%;}
 .trend_txt_box{
     width: 100%;
-    height: 100px;
+    height: 140px;
     padding: 30px 0;
     box-sizing: border-box;
 }
 .trend_txt_box h2{font-size: 14px; font-weight: 500; color: #666;}
 .trend_txt_box p{font-size: 18px; font-weight: 900;}
+/* +PICK  시작 지점*/
+.pick_box{  
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.pick_title{
+    width: 100%;
+    line-height: 30px;
+    margin: 70px 0;
+    text-align: center;
+    
+    position: relative;
+}
+.pick_title h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+.pick_sm_title{
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+    margin: 20px 0;
+}
+.pick_view_title{
+    position: absolute;
+    right: 0;
+    float: right;
+    font-size: 18px;
+    font-weight: 900;
+    color: #666;
+}
+.pick_list_box{width: 100%; overflow: hidden;}
+.pick_list_box ul{display: flex; flex-wrap: wrap; gap: 20px ;}
+.pick_list_box li{
+    width: calc((100% - (20px * 3))/ 4);
+    border: 1px solid #d5d5d5;
+    box-sizing: border-box;
+}
+.pick_list_box li:hover{border: 1px solid black;}
+.pick_img_box img{width: 100%;}
+.pick_img_box{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.pick_txt_box{
+    float: left;
+    width: 50%;
+    padding: 30px;  
+    height: 100%;
+    line-height: 1;
+    text-align: left;
+    box-sizing: border-box;
+}
+.pick_txt_box p{font-size: 14px; font-weight: 600; }
+.pick_txt_box span{color: red;}
+/* 베스트 브랜드 시작지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 베스트 브랜드 시작지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+#best_sec{padding-top: 130px;}
+.bestbrand_box input{display: none;}
+.bestbrand_box{max-width: 100%; margin-bottom: 350px; }
+.bestbrand_title{
+    width: 100%;
+    line-height: 30px;
+    margin: 70px 0;
+    text-align: center;
+    
+}
+.bestbrand_title h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+.nike_bg{
+    width: 100%;
+    height: 365px;
+    background: url(../ABC_img/best_brand/best_bg/best_nike_bg.jpg)no-repeat center;
+    transition: all 0.5s;
+
+    position: relative;
+    top: 0;
+}
+.bestbrand_item_box{
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.label_list{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.label_list label{color: white; padding: 10px 0; cursor: pointer;}
+.label_list label:hover{color: #ee1c25;}
+.label_list_item{width: 100%; margin-top: 50px;}
+.label_list_item ul{display: flex; flex-wrap: wrap; gap: 20px; display: none;}
+#b_ni:checked ~ .nike_bg .bestbrand_item_box .label_list label[for="b_ni"]{border-bottom: 2px solid #ee1c25;}
+#b_ad:checked ~ .nike_bg .bestbrand_item_box .label_list label[for="b_ad"]{border-bottom: 2px solid #ee1c25;}
+#b_haw:checked ~ .nike_bg .bestbrand_item_box .label_list label[for="b_haw"]{border-bottom: 2px solid #ee1c25;}
+#b_v:checked ~ .nike_bg .bestbrand_item_box .label_list label[for="b_v"]{border-bottom: 2px solid #ee1c25;}
+#b_new:checked ~ .nike_bg .bestbrand_item_box .label_list label[for="b_new"]{border-bottom: 2px solid #ee1c25;}
+#b_con:checked ~ .nike_bg .bestbrand_item_box .label_list label[for="b_con"]{border-bottom: 2px solid #ee1c25;}
+
+.label_list_item li{
+    width: calc((100% - (20px * 3)) / 4);
+}
+.best_lmg img{width: 100%;}
+.best_lmg{width: 100%;}
+.best_txt{width: 100%; height: 40%; padding: 30px; box-sizing: border-box;}
+.best_txt h3{font-weight: 900;}
+.best_txt p{font-size: 14px;}
+
+
+#b_ni:checked ~ .nike_bg .bestbrand_item_box .label_list_item .ni_list{display: flex;}
+#b_ad:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_adidas_bg.jpg) no-repeat center;}
+#b_ad:checked ~ .nike_bg .bestbrand_item_box .label_list_item .ad_list{display: flex;}
+#b_haw:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_how_bg.jpg) no-repeat center;}
+#b_haw:checked ~ .nike_bg .bestbrand_item_box .label_list_item .haw_list{display: flex;}
+#b_v:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_vans_bg.jpg) no-repeat center;}
+#b_v:checked ~ .nike_bg .bestbrand_item_box .label_list_item .vans_list{display: flex;}
+#b_new:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_newb_bg.jpg) no-repeat center;}
+#b_new:checked ~ .nike_bg .bestbrand_item_box .label_list_item .new_list{display: flex;}
+#b_con:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_conberse_bg.jpg) no-repeat center;}
+#b_con:checked ~ .nike_bg .bestbrand_item_box .label_list_item .con_list{display: flex;}
+/* 베스트 브랜드 끝지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* footer 시작지점 */
+footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400px;}
+.footer_top{
+    width: 100%; height: 50px; border-top: 2px solid #e2e2e2; border-bottom: 2px solid #e2e2e2; background-color: rgb(233, 233, 233); padding: 0 20px; box-sizing: border-box;
+}
+.footer_top_txt{
+    max-width: 1200px; margin: 0 auto; line-height: 50px; display: flex; gap: 40px  ;
+}
+.footer_top_txt h1{font-weight: 900; font-size: 14px;}
+.footer_top_txt span{font-size: 11px; color: #666;}
+.footer_main{ max-width: 1200px; margin: 0 auto; padding: 50px 20px; box-sizing: border-box;}
+.f_left{width: 50%; float: left;}
+.f_left_logo{width: 100%;}
+.f_left_logo img{width: 100px; height: 20px;}
+.f_left_txt{margin-top: 20px;}
+.f_left_txt p{font-size: 13px; color: #666;padding: 3px 0;}
+
+/* 650때 햄버거 넣기 */
+@media (max-width:1200px){
+    body{overflow-x: hidden;}
+    .pick_list_box li{ width: calc((100% - (20px * 1))/ 2);}
+    .best_txt{padding: 0;}
+    .review_txt_box P:nth-child(1) { font-size: 12px; margin-bottom: 5px;}
+    .review_txt_box P:nth-child(2) { font-size: 8px;}
+    .review_txt_box{padding: 5px;}
+    .label_list{gap: 20px   ;}
+} 
+@media (max-width:900px){
+    body{overflow-x: hidden;}
+    .g_p1{font-size: 20px;}
+    .g_p2 {font-size: 12px;}
+    .hot_deal_title p{font-size: 10px;}
+    .going_deal a { font-size: 14px;}
+    .md_item_box li { width: calc((100% - (2 * 20px))/ 3);}
+} 
 /* 650때 햄버거 넣기 */
 @media (max-width:650px){
+    body{overflow-x: hidden;}
+    #hotdeal_sec{padding-top: 80px;}
+    #new_arrivals_sec{padding-top: 80px;}
+    #MD_sec{padding-top: 80px;}
+    #trand_sec{padding-top: 80px;}
+    #pick_sec{padding-top: 80px;}
+    #best_sec{padding-top: 80px;}
     .hamberg{display: block;}
     .menu_pan{display: block;}
+    .banner_right{width: 100%;}
+    .banner_left{width: 100%;}
+    .mditem_txt{padding: 0;}
+    .header_bot_box{display: none;}
+    .container{margin-top: 80px;}
+    .slide_txt{padding: 0;}
+    .mds_pick_list{gap: 40px;}
+    .md_item_box li { width: calc((100% - (1 * 20px))/ 2);}
+    .trend_list li { width: calc((100% - (1 * 20px))/ 2);}
+    .hot_deal_box{margin-top: 0;}
+    .new_arrivals_box{margin-top: 0;}
+    .mds_pick_box{margin-top: 0;}
+    .trend_box{margin-top: 0;}
+    .pick_title{margin-bottom: 70px;}
+    .bestbrand_title{margin-bottom: 70px;}
+    .label_list_item li { width: calc((100% - (20px * 1)) / 2);}
+    .bestbrand_box { margin-bottom: 650px;}
+    .pick_txt_box p { font-size: 11px;}
 } 

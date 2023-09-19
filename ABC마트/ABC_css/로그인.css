@@ -1,3 +1,9 @@
+#top_box{position: relative; top: -130px;}
+.top_btn{
+    width: 50px;height: 50px;background-color: #333;text-align: center;
+    line-height: 50px; color: white; border-radius: 50%;
+    position: fixed; bottom: 5%; right: 5%; z-index: 9999999999;
+}
 /* 헤더탑 */
 body{background-color: #cccccc;}
 .header_top_box{
@@ -292,8 +298,19 @@ button{cursor: pointer;}
     font-weight: 900;
 }
 /* 푸터 영역 */
-footer{
-    width: 100%;
-    height: 400px;
-    background-color: #333;
+/* footer 시작지점 */
+footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400px;}
+.footer_top{
+    width: 100%; height: 50px; border-top: 2px solid #e2e2e2; border-bottom: 2px solid #e2e2e2; background-color: rgb(233, 233, 233);
 }
+.footer_top_txt{
+    max-width: 1200px; margin: 0 auto; line-height: 50px; display: flex; gap: 40px  ;
+}
+.footer_top_txt h1{font-weight: 900; font-size: 14px;}
+.footer_top_txt span{font-size: 11px; color: #666;}
+.footer_main{ max-width: 1200px; margin: 0 auto; padding: 50px 0;}
+.f_left{width: 50%; float: left;}
+.f_left_logo{width: 100%;}
+.f_left_logo img{width: 100px; height: 20px;}
+.f_left_txt{margin-top: 20px;}
+.f_left_txt p{font-size: 13px; color: #666;padding: 3px 0;}

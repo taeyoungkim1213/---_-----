@@ -14,8 +14,10 @@
 </head>
 <body>
     <div class="wrap">
+        <div id="top_box"></div>
+        <div class="top_btn"><a href="#top_box">TOP</a></div>
         <header class="header">
-            <div class="header_top_box">
+            <div class="header_top_box" id="top">
                 <div class="header_top">
                     <!-- 햄버거 반응형 -->
                     <div class="hamberg">
@@ -24,11 +26,19 @@
                         <div class="line" id="line_bot"></div>
                     </div>
                     <!-- 햄버거 열리는 판 -->
-                    <div class="menu_pan" id="menu_pan"></div>
+                    <div class="menu_pan" id="menu_pan">
+                        <ul>
+                            <li><a href="#hotdeal_sec"> 》 HOT DEAL 《</a></li>
+                            <li><a href="#new_arrivals_sec"> 》 NEW ARRIVALS 《</a></li>
+                            <li><a href="#MD_sec"> 》 MD"S PICK 《</a></li>
+                            <li><a href="#trand_sec"> 》 TRAND ON 《</a></li>
+                            <li><a href="#pick_sec"> 》 + PICK 《</a></li>
+                            <li><a href="#best_sec"> 》 BEST BRAND 《</a></li>
+                        </ul>
+                    </div>
                     <div class="logo">
                         <a href="./포트폴리오(ABC마트).html"><img src="https://image.a-rt.com/art/system/site/202207/1658299296317.png" alt=""></a>
                     </div>
-<!-- 로그인 회원가입 만들기 -->
                    <div class="join">
                         <a href="./로그인회면(ABC).html">
                             <img src="../ABC_img/로그인.png" alt="">
@@ -39,11 +49,10 @@
                    </div>
                 </div>
             </div>
-<!-- 스크롤 내리면 고정시키기 -->
            <div class="header_bot_box">
             <div class="header_bottom"> 
                 <ul class="header_bottom_ul">
-                    <li class="menu"><a href="#">KIND OF</a></li>
+                    <li class="menu"><a href="#best_sec">BEST BRAND</a></li>
                     <li class="menu"><a href="">MEN</a></li>
                     <li class="menu"><a href="">WOMEN</a></li>
                     <li class="menu"><a href="">KIDS</a></li>
@@ -54,34 +63,36 @@
                             <div class="pan_item" id="BRAND">
                                 <div class="BRAND_box">
                                     <div class="brand_title">
-                                        <p>HOT</p>
+                                        <a href="#best_sec">
+                                            <p>BEST</p>
                                         <span>BRAND</span>
+                                        </a>
                                     </div>
                                     <div class="brand_img_box">
                                         <ul>
                                             <li>
-                                                <div class="logo_img"><a href=""><img src="../ABC_img/나이키_로고_.png" alt=""></a></div>
+                                                <div class="logo_img"><a href="#best_sec"><img src="../ABC_img/나이키_로고_.png" alt=""></a></div>
                                                 <div class="logo_txt">나이키</div>
                                             </li>
                                             <li>
-                                                <div class="logo_img"><a href=""><img src="../ABC_img/컨버스로고.png" alt=""></a></div>
-                                                <div class="logo_txt">나이키</div>
+                                                <div class="logo_img"><a href="#best_sec"><img src="../ABC_img/컨버스로고.png" alt=""></a></div>
+                                                <div class="logo_txt">컨버스</div>
                                             </li>
                                             <li>
-                                                <div class="logo_img"><a href=""><img src="../ABC_img/아이다스.png" alt=""></a></div>
-                                                <div class="logo_txt">나이키</div>
+                                                <div class="logo_img"><a href="#best_sec"><img src="../ABC_img/아이다스.png" alt=""></a></div>
+                                                <div class="logo_txt">아디다스</div>
                                             </li>
                                             <li>
-                                                <div class="logo_img"><a href=""><img src="../ABC_img/반스로고.png" alt=""></a></div>
-                                                <div class="logo_txt">나이키</div>
+                                                <div class="logo_img"><a href="#best_sec"><img src="../ABC_img/반스로고.png" alt=""></a></div>
+                                                <div class="logo_txt">반스</div>
                                             </li>
                                             <li>
-                                                <div class="logo_img"><a href=""><img src="../ABC_img/뉴발란스_로고_(2).png" alt=""></a></div>
-                                                <div class="logo_txt">나이키</div>
+                                                <div class="logo_img"><a href="#best_sec"><img src="../ABC_img/뉴발란스_로고_(2).png" alt=""></a></div>
+                                                <div class="logo_txt">뉴발란스</div>
                                             </li>
                                             <li>
-                                                <div class="logo_img"><a href=""><img src="../ABC_img/나이키_로고_.png" alt=""></a></div>
-                                                <div class="logo_txt">나이키</div>
+                                                <div class="logo_img"><a href="#best_sec"><img src="https://logowik.com/content/uploads/images/hawkins4763.logowik.com.webp" alt=""></a></div>
+                                                <div class="logo_txt">호킨스</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -202,83 +213,83 @@
              <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="플랫라이트">
+                        <a href="#">
                             <div class="gallbox">
                                 <p class="g_p1">항상 편안한 착용감 <br>플랫라이트
                                     </p>
                                     <hr>
                                 <p class="g_p2">보러가기《</p>
-                                <img src="../ABC_img/메인배너1.jpg" alt="">
+                                <img src="../ABC_img/메인슬라이더/메인배너1.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="">
+                        <a href="#">
                             <div class="gallbox">
-                                <p class="g_p1 txt_ani">가나달라</p>
+                                <p class="g_p1 txt_ani">IN MY WAY,<br> 스테파노로시</p>
                                 <hr>
                                 <p class="g_p2">보러가기《</p>
-                                <img src="../ABC_img/메인배너2.jpg" alt="">
+                                <img src="../ABC_img/메인슬라이더/메인배너2.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="">
+                        <a href="#">
                             <div class="gallbox">
-                                <p class="g_p1">오늘의 상품</p>
+                                <p class="g_p1" style="color: black;">마크 모크<br>23 F/w 뉴 컬렉션</p>
                                 <hr>
                                 <p class="g_p2">보러가기《</p>
-                                <img src="../ABC_img/메인배너3.jpg" alt="">
+                                <img src="../ABC_img/메인슬라이더/메인배너3.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="">
+                        <a href="#">
                             <div class="gallbox">
-                                <p class="g_p1">오늘의 상품</p>
+                                <p class="g_p1" style="color: black;">매일의 러닝을 위한<br>나이키 러닝화</p>
                                 <hr>
                                 <p class="g_p2">보러가기《</p>
-                                <img src="../ABC_img/메인배너4.jpg" alt="">
+                                <img src="../ABC_img/메인슬라이더/메인배너4.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="">
+                        <a href="#">
                             <div class="gallbox">
-                                <p class="g_p1" style="color: black;">오늘의 상품</p>
+                                <p class="g_p1" style="color: black;">인기의 신발 아디다스</p>
                                 <hr>
                                 <p class="g_p2">보러가기《</p>
-                                <img src="../ABC_img/메인배너5.jpg" alt="">
+                                <img src="../ABC_img/메인슬라이더/메인배너5.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="">
+                        <a href="#">
                             <div class="gallbox">
-                                <p class="g_p1">오늘의 상품</p>
+                                <p class="g_p1">GOALSTUDIO <br>신상품 발매</p>
                                 <hr>
                                 <p class="g_p2">보러가기《</p>
-                                <img src="../ABC_img/메인배너6.jpg" alt="">
+                                <img src="../ABC_img/메인슬라이더/메인배너6.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="">
+                        <a href="#">
                             <div class="gallbox">
-                                <p class="g_p1">오늘의 상품</p>
+                                <p class="g_p1">LACOSTE LINESET <br>단독발매</p>
                                 <hr>
                                 <p class="g_p2">보러가기《</p>
-                                <img src="../ABC_img/메인배너7.jpg" alt="">
+                                <img src="../ABC_img/메인슬라이더/메인배너7.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="">
+                        <a href="#">
                             <div class="gallbox">
-                                <p class="g_p1">오늘의 상품</p>
+                                <p class="g_p1">언제나 아름다운 <br>VAN'S 구경해보세요.</p>
                                 <hr>
                                 <p class="g_p2">보러가기《</p>
-                                <img src="../ABC_img/메인배너8.jpg" alt="">
+                                <img src="../ABC_img/메인슬라이더/메인배너8.jpg" alt="">
                             </div>
                         </a>
                     </div>
@@ -295,7 +306,8 @@
 <!-- 슬라이드 종료지점 -->
 
 <!-- 메인 컨텐츠 영역 시작지점 -->
-        <section>
+<!-- 핫딜 시작지저므ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section id="hotdeal_sec">
             <div class="hot_deal_box">
                 <div class="hot_deal_title">
                     <h2>HOT DEAL</h2><br><br>
@@ -425,8 +437,8 @@
                 </div>
             </div>
         </section>
-<!-- new_arrivals 시작지점 -->
-        <section>
+<!-- new_arrivals 시작지점ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-- -->
+        <section id="new_arrivals_sec">
             <div class="new_arrivals_box">
                 <div class="new_arrivals_title">
                     <h2>NEW ARRIVALS</h2>
@@ -582,6 +594,7 @@
                 </div>
             </div>
         </section>
+<!-- review_box 시작지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
         <section>
             <div class="review_box">
                 <div class="swiper mySwiper4">
@@ -651,7 +664,8 @@
                 </div>
             </div>
         </section>
-        <section>
+<!-- MD"S PICK 시작지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+        <section id="MD_sec">
             <div class="mds_pick_box">
                 <div class="mds_pick_title">
                     <h1>MD'S PICK</h1>
@@ -921,7 +935,19 @@
                 </div>
             </div>
         </section>
+        <!-- 광고 배너 시작지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
         <section>
+            <div class="banner_">
+                <div class="banner_left" id="banner_left">
+                    <a href=""><img src="../ABC_img/baaner/left_banner.jpg" alt=""></a>
+                </div>
+                <div class="banner_right" id="banner_right">
+                    <a href=""><img src="../ABC_img/baaner/right_banner.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+<!-- 트렌드 시작지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section id="trand_sec">
             <div class="trend_box">
                 <div class="trend_title">
                     <h1>TRAND ON</h1>
@@ -980,8 +1006,414 @@
                 </div>
             </div>
         </section>
+<!-- +PICK 시작지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section id="pick_sec">
+            <div class="pick_box">
+                <div class="pick_title">
+                    <h1>+ PICK</h1>
+                    <span class="pick_sm_title">다양한 상품을 한 눈에 모아 볼 수 있는 묶음 상품을 만나보세요.</span>
+                    <span class="pick_view_title"><a href="">more></a></span>
+                </div>
+                <div class="pick_list_box">
+                    <ul>
+                        <li>
+                            <a href=""><div class="pick_img_box">
+                                <img src="../ABC_img/+pick/pick_0.jpg" alt="">
+                            </div>
+                            <div class="pick_txt_box">
+                                <p>액티비티와 아웃도어 모든 장갑이 한곳에!</p>
+                                <br>
+                                <span>8,500</span><span style="font-size: 11px;">원~</span>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href=""><div class="pick_img_box">
+                                <img src="../ABC_img/+pick/pick_1.jpg" alt="">
+                            </div>
+                            <div class="pick_txt_box">
+                                <p>어센틱만한 기본템이 어디 또 있나요~?</p>
+                                <br>
+                                <span>~75%</span><span style="font-size: 11px;">할인</span>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href=""><div class="pick_img_box">
+                                <img src="../ABC_img/+pick/pick_2.jpg" alt="">
+                            </div>
+                            <div class="pick_txt_box">
+                                <p>농구 헤리티지 감성을 담은..</p>
+                                <br>
+                                <span>~30%</span><span style="font-size: 11px;">할인</span>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href=""><div class="pick_img_box">
+                                <img src="../ABC_img/+pick/pick_3.jpg" alt="">
+                            </div>
+                            <div class="pick_txt_box">
+                                <p>MR530 재입고 기다리셨죠?</p>
+                                <br>
+                                <span>79,000</span><span style="font-size: 10px;">원~</span>
+                            </div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<!-- bestbrand 시작지점ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+        <section id="best_sec">
+            <div class="bestbrand_box">
+                <div class="bestbrand_title">
+                    <h1>BEST BRAND</h1>
+                </div>
+                <input type="radio" name="best" id="b_ni" checked>
+                <input type="radio" name="best" id="b_ad">
+                <input type="radio" name="best" id="b_haw">
+                <input type="radio" name="best" id="b_v">
+                <input type="radio" name="best" id="b_new">
+                <input type="radio" name="best" id="b_con">
+                <div class="nike_bg">
+                    <div class="bestbrand_item_box">
+                        <div class="label_list">
+                            <label for="b_ni">NIKE</label>
+                            <label for="b_ad">ADIDAS</label>
+                            <label for="b_haw">HAWKINS</label>
+                            <label for="b_v">VANS</label>
+                            <label for="b_new">NEW BALANCE</label>
+                            <label for="b_con">CONVERSE</label>
+                        </div>
+                        <div class="label_list_item">
+                            <ul class="ni_list">
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/nike/nike_0.jpeg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>나이키</h3><br>
+                                        <p>나이키 에어 맥스 솔로</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">119,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/nike/nike_1.jpeg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>나이키</h3><br>
+                                        <p>나이키 에어 맥스 솔로</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">119,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/nike/nike_2.jpeg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>나이키</h3><br>
+                                        <p>나이키 에어 맥스 솔로</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">119,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/nike/nike_3.jpeg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>나이키</h3><br>
+                                        <p>나이키 모티바</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">129,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="ad_list">
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/adidas/adidas_0.jpeg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>아디다스</h3><br>
+                                        <p>슈퍼스타</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">139,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/adidas/adidas_1.jpeg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>아디다스</h3><br>
+                                        <p>슈퍼스타</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">139,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/adidas/adidas_2.jpeg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>아디다스</h3><br>
+                                        <p>리스폰스 러너 유</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">69,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/adidas/adidas_3.jpeg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>아디다스</h3><br>
+                                        <p>리스폰스 러너 유</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">69,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="haw_list">
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/haw/how_0.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>호킨스</h3><br>
+                                        <p>마이크로 라이트 플레인</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">129,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/haw/how_1.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>호킨스</h3><br>
+                                        <p>마이크로 라이트 플레인</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">129,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/haw/how_2.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>호킨스</h3><br>
+                                        <p>마이크로 라이트 플레인</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">129,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/haw/how_3.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>호킨스</h3><br>
+                                        <p>마이크로 라이트 플레인</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">129,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="vans_list">
+                                <li>
+                                   <a href="">
+                                     <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/vans/vans_0.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>반스</h3><br>
+                                        <p>어센틱-컬러 띠어리 비컨 블루</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">75,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                   </a>
+                                </li>
+                                <li>
+                                   <a href="">
+                                     <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/vans/vans_1.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>반스</h3><br>
+                                        <p>올드 스쿨-컬러 띠어리 비컨 블루</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">89,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                   </a>
+                                </li>
+                                <li>
+                                   <a href="">
+                                     <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/vans/vans_2.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>반스</h3><br>
+                                        <p>어센틱</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">69,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                   </a>
+                                </li>
+                                <li>
+                                   <a href="">
+                                     <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/vans/vans_3.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>반스</h3><br>
+                                        <p>올드 스쿨</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">89,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                   </a>
+                                </li>
+                            </ul>
+                            <ul class="new_list">
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/newbal/new_0.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>뉴발란스</h3><br>
+                                        <p>MR530SG</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">119,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/newbal/new_1.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>뉴발란스</h3><br>
+                                        <p>MR530KA</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">129,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/newbal/new_2.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>뉴발란스</h3><br>
+                                        <p>ML373G2</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">79,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/newbal/new_3.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>뉴발란스</h3><br>
+                                        <p>ML373QJ2</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">79,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="con_list">
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/converse/con_0.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>컨버스</h3><br>
+                                        <p>척테일러 올스타 블랙</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">119,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/converse/con_1.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>컨버스</h3><br>
+                                        <p>척 70 클래식 블랙</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">119,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/converse/con_2.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>컨버스</h3><br>
+                                        <p>척 70 시즈널 빈티지 캔버스 그레이</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">119,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="best_lmg">
+                                        <img src="../ABC_img/best_brand/converse/con_3.jpg" alt="">
+                                    </div>
+                                    <div class="best_txt">
+                                        <h3>컨버스</h3><br>
+                                        <p>척 70 빈티지 미드나잇클로버</p><br><br>
+                                        <span style="font-weight: 900; font-size: 18px;">129,000</span><span style="font-weight: 900; font-size: 13px;"> 원</span>
+                                    </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_top">
+                <div class="footer_top_txt">
+                    <h1>통합 고객센터</h1> <span>1234-1234 월~금 13:00 ~ 18:00(주말,공휴일 휴뮤)</span>
+                </div>
+                <div class="footer_main">
+                    <div class="f_left">
+                        <div class="f_left_logo">
+                            <img src="../ABC_img/footer_logo.png" alt="">
+                        </div>
+                        <div class="f_left_txt">
+                            <p>(주)에이비씨마트 코리아ㅣ대표이사 : 홍길동ㅣ주소 : 000000000000</p>
+                            <p>사업자 등록번호:123-12-12345ㅣ통신판매업자신고 : 000000000000</p>
+                            <p>개인정보보호 책임자 : 홍길동 ㅣ 이메일 : qwe123@qwe123.com</p>
+                            <br>
+                            <p>사업자정보확인 : 개인정보처리방침ㅣ이용약관ㅣ멤버십 이용약관ㅣ위치정보 이용약관</p>
+                            <p>구매안전서비스 가입사실확인</p>
+                            <br>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-<!-- Swiper JS -->
+<!-- Swiper JS ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ---->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 <!-- 메인배너 Swiper -->
@@ -1000,18 +1432,15 @@
             prevEl: '.swiper-button-prev',
         },
         autoplay: {
-            delay: 3000, // 몇초마다 슬라이드 이동할지
+            delay: 3000,// 몇초마다 슬라이드 이동할지
+            pauseOnMouseEnter : true, 
+            
         },
         speed: 500, // 몇초만에 left 0 으로 도착할지
         loop: true,
         direction: 'horizontal', //horizontal,vertical 배치 방향
         effect: 'fade' // 'slide', 'fade', 'cube', 'coverflow', 'flip' or 'creative'
     });
-    $('.container').hover(function(){
-        swiper.autoplay.stop();
-    }, function(){
-        swiper.autoplay.start()
-    })
     
 </script>
 <!-- 핫딜 스와이퍼 -->
@@ -1029,6 +1458,20 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            // when window width is >= 320px
+            0: {
+                slidesPerView: 1,
+            },
+            550: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            900: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        },
         autoplay: {
             delay: 2000, // 몇초마다 슬라이드 이동할지
         },
@@ -1043,7 +1486,7 @@
 <script>
     var swiper = new Swiper(".mySwiper3", {
         slidesPerView: 5, // 칸 수
-        spaceBetween: 50, //gap
+        spaceBetween: 30, //gap
         // freeMode: true,
         pagination: {
             // el: ".swiper-pagination",
@@ -1054,6 +1497,21 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            // when window width is >= 320px
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            550: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            900: {
+                slidesPerView: 5,
+                spaceBetween: 30
+            }
+        },
         // autoplay: {
         //     delay: 3000, // 몇초마다 슬라이드 이동할지
         // },
@@ -1062,11 +1520,12 @@
         direction: 'horizontal', //horizontal,vertical 배치 방향
         effect: 'slide' // 'slide', 'fade', 'cube', 'coverflow', 'flip' or 'creative'
     });
-    $('.container').hover(function(){
+    $('#new_arrivals_sec').hover(function(){
         swiper.autoplay.stop();
     }, function(){
         swiper.autoplay.start()
     })
+ 
     
 </script>
 <!-- 리뷰 슬라이더 -->
@@ -1084,8 +1543,23 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            // when window width is >= 320px
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            550: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            900: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            }
+        },
         autoplay: {
-            delay: 3000, // 몇초마다 슬라이드 이동할지
+            delay: 4000, // 몇초마다 슬라이드 이동할지
         },
         speed: 500, // 몇초만에 left 0 으로 도착할지
         loop: true,
@@ -1095,7 +1569,73 @@
     
 </script>
 <script>
-    
+    // 오프셋 탑 닿으면 슬라이드 나오기
+$(document).ready(function() {
+        let h_o_top = $('#hotdeal_sec').offset().top
+        let md_o_top = $('#MD_sec').offset().top
+        let tr_o_top = $('#trand_sec').offset().top
+
+
+        $(window).scroll(function(){
+// 핫딜 탑 닿으면 enw arrivals 나오기
+            if(h_o_top <= $(window).scrollTop() + 100) {
+                $('#new_arrivals_sec').css({
+                    // transform: 'translateX(0)',
+                    transition: 'all 0.5s', 
+                    opacity: '1'
+                })
+            }
+            else {
+                $('#new_arrivals_sec').css({
+                    // transform: 'translateX(-2000px)',
+                    transition: 'all 0.5s',
+                    opacity: '0',
+                })
+            }
+// md닿으면 배너 움직이기
+            if(md_o_top <= $(window).scrollTop() + 150) {
+                $('#banner_left').css({
+                    transform: 'translateX(0)',
+                    transition: 'all 1s', 
+                    opacity: '1'
+                })
+                $('#banner_right').css({
+                    transform: 'translateX(0)',
+                    transition: 'all 1s', 
+                    opacity: '1'
+                })
+            }
+            else {
+                $('#banner_left').css({
+                    transform: 'translateX(-2000px)',
+                    transition: 'all 1s',
+                    opacity: '0',
+                })
+                $('#banner_right').css({
+                    transform: 'translateX(2000px)',
+                    transition: 'all 1s',
+                    opacity: '0',
+                })
+            }
+            // 트랜드 탑 닿으면 + 픽 이미지 돌리기
+            if(tr_o_top <= $(window).scrollTop() - 150) {
+                $('.pick_list_box li').css({
+                    transform: 'rotateY(360deg)',
+                    transition: 'all 0.5s', 
+                    opacity: '1'
+                })
+            }
+            else {
+                $('.pick_list_box li').css({
+                    // rotate : '0deg',
+                    transform: 'rotateY(0deg)',
+                    transition: 'all 0.5s', 
+                    opacity: '1'
+                })
+            }
+
+        })
+    })
 //메뉴아래 바 따라 댕기기****************************************
     $(document).ready(function() {
         $('.bar').css({
