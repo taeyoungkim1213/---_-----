@@ -199,7 +199,7 @@
             <div class="detail_box">
                 <div class="detail_left_box">
                     <div class="detail_img_box">
-                        <img src="../ABC_img/md pick/0_new balance/0_MD NEWBALANCE.jpg" alt="">
+                        <img id="img_box" src="../ABC_img/md pick/0_new balance/0_MD NEWBALANCE.jpg" alt="">
                     </div>
                     <!-- 이미지 아래구간 -->
                 </div>
@@ -210,7 +210,24 @@
                             <div class="btn_box">
                                 <button type="button" class="heart_icon" id="heart_icon"></button>
                             </div>
+                            <div class="detail_name">뉴발란스</div>
+                            <div class="detail_s_name">MR530SG</div>
+                            <div class="detail_price">
+                                <span>119,000</span><span>원</span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="amount_box">
+                        <label for="size">사이즈</label>
+                        <select name="" id="size">
+                            <option value="">사이즈 선택</option>
+                            <option value="">230</option>
+                            <option value="">240</option>
+                            <option value="">250</option>
+                            <option value="">260</option>
+                            <option value="">270</option>
+                            <option value="">280</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -218,6 +235,7 @@
     </div>
 </body>
 <script>
+//하트 누르기
     $(document).ready(function() {
         let chk = true;
        
@@ -234,9 +252,9 @@
             }
             chk = !chk;
         });
-
-
-
     })
+//하트 누르기 종료
+
+
 </script>
 </html>

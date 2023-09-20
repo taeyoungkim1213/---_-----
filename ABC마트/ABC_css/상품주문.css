@@ -226,7 +226,7 @@
 }
 .detail_right_box{
     width: 580px;
-    float: right;
+    float: left;
 }
 .detail_img_box img{width: 100%;}
 .detail_img_box{
@@ -255,4 +255,26 @@
     font-size: 0;
     vertical-align: top;
     border: none;
+}
+.detail_name{
+    line-height: 40px;
+    margin-top: 15px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Montserrat",sans-serif;
+}
+.detail_s_name{
+    line-height: 22px;
+    margin-top: 6px;
+    font-size: 16px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+}
+.detail_price{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 900;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
 }
