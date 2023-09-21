@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ABC_css/상품주문.css">
+    <link rel="stylesheet" href="./ABC_css/포트폴리오(ABC마트).css">
+    <link rel="stylesheet" href="./ABC_css/common.css">
+    <!-- <link rel="stylesheet" href="./ABC_css/product.css"> -->
+    <link rel="stylesheet" href="./ABC_css/item.css">
+    <link rel="stylesheet" href="./ABC_css/index.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="/js/item.js"></script>
+    <script src="/js/jq-1.12.4.js"></script>
+    <script src="/js/loadlist.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div id="top_box"></div>
+        <div class="top_btn"><a href="#top_box">TOP</a></div>
+        <header class="header">
+            <div class="header_top_box" id="top">
+                <div class="header_top">
+                    <!-- 햄버거 반응형 -->
+                    <div class="hamberg">
+                        <div class="line" id="line_top"></div>
+                        <div class="line" id="line_mid"></div>
+                        <div class="line" id="line_bot"></div>
+                    </div>
+                    <!-- 햄버거 열리는 판 -->
+                    <div class="menu_pan" id="menu_pan">
+                        <ul>
+                            <li><a href="hotdeal.html?cate_no=0"> 》 HOT DEAL 《</a></li>
+                            <li><a href="newarrivals.html?cate_no=1"> 》 NEW ARRIVALS 《</a></li>
+                            <li><a href="mdpick.html?cate_no=2"> 》 MD"S PICK 《</a></li>
+                            <li><a href="trend.html?cate_no=3"> 》 TRAND ON 《</a></li>
+                            <li><a href="pick.html?cate_no=4"> 》 + PICK 《</a></li>
+                            <li><a href="best.html?cate_no=5"> 》 BEST BRAND 《</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <a href="./포트폴리오(ABC마트).html"><img src="https://image.a-rt.com/art/system/site/202207/1658299296317.png" alt=""></a>
+                    </div>
+                   <div class="join">
+                        <a href="./로그인회면(ABC).html">
+                            <img src="ABC_img\아이콘\로그인.png" alt="">
+                        </a>
+                        <a href="./회원가입화면.html">
+                            <img src="ABC_img/아이콘/회원가입.png" alt="">
+                        </a>
+                   </div>
+                </div>
+            </div>
+           <div class="header_bot_box">
+            <div class="header_bottom"> 
+                <ul class="header_bottom_ul">
+                    <li><a href="hotdeal.html?cate_no=0">HOT DEAL</a></li>
+                    <li><a href="newarrivals.html?cate_no=1">NEW ARRIVALS</a></li>
+                    <li><a href="mdpick.html?cate_no=2">MD"S PICK</a></li>
+                    <li><a href="trend.html?cate_no=3">TRAND ON</a></li>
+                    <li><a href="pick.html?cate_no=4">+ PICK</a></li>
+                    <li><a href="best.html?cate_no=5">BEST BRAND</a></li>
+                    <li class="bar"></li>
+                    
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="search...">
+                    <img src="https://abcmart.a-rt.com/static/images/common/comm_header_icon_search.png" alt="">
+                </div>
+         </div>
+           </div>
+        </header>
+        <main>
+            <!-- 이미지 아래구간 -->
+            <div class="container">
+                
+                <div class="detail_area contents_area">
+        </main>
+    </div>
+    <footer style="margin-top: 300px;">
+        <div class="footer_top">
+            <div class="footer_top_txt">
+                <h1>통합 고객센터</h1> <span>1234-1234 월~금 13:00 ~ 18:00(주말,공휴일 휴뮤)</span>
+            </div>
+            <div class="footer_main">
+                <div class="f_left">
+                    <div class="f_left_logo">
+                        <img src="./ABC_img/아이콘/footer_logo.png" alt="">
+                    </div>
+                    <div class="f_left_txt">
+                        <p>(주)에이비씨마트 코리아ㅣ대표이사ㅣ홍길동ㅣ주소 : 000000000000</p>
+                        <p>사업자 등록번호:123-12-12345ㅣ통신판매업자신고 : 000000000000</p>
+                        <p>개인정보보호 책임자 : 홍길동 ㅣ 이메일 : qwe123@qwe123.com</p>
+                        <br>
+                        <p>사업자정보확인 : 개인정보처리방침ㅣ이용약관ㅣ멤버십 이용약관ㅣ위치정보 이용약관</p>
+                        <p>구매안전서비스 가입사실확인</p>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./js/item.js"></script>
+<script src="./js/jq-1.12.4.js"></script>
+<script src="./js/loadlist.js"></script>
+<button></button>
+<script>
+
+    $(document).ready(function() {
+        let chk = true;
+       
+        $('#heart_icon').click(function(){
+            if(chk == true){
+            $('#heart_icon').css({
+                background: `url(../ABC_img/아이콘/heart_icon.png) no-repeat -27px 0`
+            })
+            }
+            else if(chk == false){
+                $('#heart_icon').css({
+                background: `url(../ABC_img/아이콘/heart_icon.png) no-repeat 0 0`
+            })
+            }
+            chk = !chk;
+        });
+    })
+    
+
+
+</script>
+
+</html>

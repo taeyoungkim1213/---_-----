@@ -55,7 +55,7 @@ body{overflow-x: hidden;}
 
     display: none;
 }
-.line {
+.h_line {
     width: 100%;
     height: 5px;
     background-color: #333333;
@@ -109,7 +109,7 @@ body{overflow-x: hidden;}
 /* 헤더바텀 */
 .header_bot_box{
     width: 100%;
-    background-color: #333;
+    background-color: #e30613;
     position: fixed;
     top: 80px;
     z-index: 99999;
@@ -130,11 +130,12 @@ body{overflow-x: hidden;}
 
     position: relative;
 }
-.menu {
-    font-weight: lighter;
+.header_bottom_ul li {
     color: white;
-    padding: 0 30px;
+    padding: 0px 14px;
     cursor: pointer;
+    font-size: 15px;
+    font-weight: 900;
 }
 .menu:hover{
     font-style: italic;
@@ -150,29 +151,7 @@ body{overflow-x: hidden;}
     left: 0;
     opacity: 0;
 }
-/* 메뉴 판 시작지점 */
-.B_pan{
-    width: 100%;
-    /* height: 300px; */
-    height: 0;    
-    background-color: rgba(200 , 200, 200, 0.8);
 
-    position: absolute;
-    top: 100%;
-    z-index: 9;
-    transition: all 0.5s;   
-            overflow: hidden;
-}
-.pan_item {
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-.pan_item img{width: 66px;height: 66px;}
-.B_pan_active{
-    height: 300px;
-    display: block;
-}
 /* 핫브랜드 시작지점 */
 .brand_title{
     width: 200px;
@@ -256,7 +235,7 @@ body{overflow-x: hidden;}
 
 /* 헤더바텀 검색창 */
 .search{    
-    width: calc(100% - 600px);
+    width: calc(100% - 730px);
     max-width: 300px;
     float:right;
     margin-right: 42px;
@@ -619,7 +598,7 @@ input[name="md"]{display: none;}
 .nike_bg{
     width: 100%;
     height: 365px;
-    background: url(../ABC_img/best_brand/best_bg/best_nike_bg.jpg)no-repeat center;
+    background: url(../ABC_img/best/best_bg/best_nike_bg.jpg)no-repeat center;
     transition: all 0.5s;
 
     position: relative;
@@ -660,15 +639,15 @@ input[name="md"]{display: none;}
 
 
 #b_ni:checked ~ .nike_bg .bestbrand_item_box .label_list_item .ni_list{display: flex;}
-#b_ad:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_adidas_bg.jpg) no-repeat center;}
+#b_ad:checked ~ .nike_bg{background: url(../ABC_img/best/best_bg/best_adidas_bg.jpg) no-repeat center;}
 #b_ad:checked ~ .nike_bg .bestbrand_item_box .label_list_item .ad_list{display: flex;}
-#b_haw:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_how_bg.jpg) no-repeat center;}
+#b_haw:checked ~ .nike_bg{background: url(../ABC_img/best/best_bg/best_how_bg.jpg) no-repeat center;}
 #b_haw:checked ~ .nike_bg .bestbrand_item_box .label_list_item .haw_list{display: flex;}
-#b_v:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_vans_bg.jpg) no-repeat center;}
+#b_v:checked ~ .nike_bg{background: url(../ABC_img/best/best_bg/best_vans_bg.jpg) no-repeat center;}
 #b_v:checked ~ .nike_bg .bestbrand_item_box .label_list_item .vans_list{display: flex;}
-#b_new:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_newb_bg.jpg) no-repeat center;}
+#b_new:checked ~ .nike_bg{background: url(../ABC_img/best/best_bg/best_newb_bg.jpg) no-repeat center;}
 #b_new:checked ~ .nike_bg .bestbrand_item_box .label_list_item .new_list{display: flex;}
-#b_con:checked ~ .nike_bg{background: url(../ABC_img/best_brand/best_bg/best_conberse_bg.jpg) no-repeat center;}
+#b_con:checked ~ .nike_bg{background: url(../ABC_img/best/best_bg/best_conberse_bg.jpg) no-repeat center;}
 #b_con:checked ~ .nike_bg .bestbrand_item_box .label_list_item .con_list{display: flex;}
 /* 베스트 브랜드 끝지점 ㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 /* footer 시작지점 */
@@ -688,7 +667,7 @@ footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400p
 .f_left_txt{margin-top: 20px;}
 .f_left_txt p{font-size: 13px; color: #666;padding: 3px 0;}
 
-/* 650때 햄버거 넣기 */
+/* 750때 햄버거 넣기 */
 @media (max-width:1200px){
     body{overflow-x: hidden;}
     .pick_list_box li{ width: calc((100% - (20px * 1))/ 2);}
@@ -707,7 +686,7 @@ footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400p
     .md_item_box li { width: calc((100% - (2 * 20px))/ 3);}
 } 
 /* 650때 햄버거 넣기 */
-@media (max-width:650px){
+@media (max-width:750px){
     body{overflow-x: hidden;}
     #hotdeal_sec{padding-top: 80px;}
     #new_arrivals_sec{padding-top: 80px;}

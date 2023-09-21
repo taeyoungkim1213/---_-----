@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ABC_css/common.css">
+    <link rel="stylesheet" href="./ABC_css/회원가입.css">
+    <link rel="stylesheet" href="./ABC_css/포트폴리오(ABC마트).css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div id="top_box"></div>
+        <div class="top_btn"><a href="#top_box">TOP</a></div>
+        <header class="header">
+            <div class="header_top_box" id="top">
+                <div class="header_top">
+                    <!-- 햄버거 반응형 -->
+                    <div class="hamberg">
+                        <div class="line" id="line_top"></div>
+                        <div class="line" id="line_mid"></div>
+                        <div class="line" id="line_bot"></div>
+                    </div>
+                    <!-- 햄버거 열리는 판 -->
+                    <div class="menu_pan" id="menu_pan">
+                        <ul>
+                            <li><a href="hotdeal.html?cate_no=0"> 》 HOT DEAL 《</a></li>
+                            <li><a href="newarrivals.html?cate_no=1"> 》 NEW ARRIVALS 《</a></li>
+                            <li><a href="mdpick.html?cate_no=2"> 》 MD"S PICK 《</a></li>
+                            <li><a href="trend.html?cate_no=3"> 》 TRAND ON 《</a></li>
+                            <li><a href="pick.html?cate_no=4"> 》 + PICK 《</a></li>
+                            <li><a href="best.html?cate_no=5"> 》 BEST BRAND 《</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <a href="./포트폴리오(ABC마트).html"><img src="https://image.a-rt.com/art/system/site/202207/1658299296317.png" alt=""></a>
+                    </div>
+                   <div class="join">
+                        <a href="./로그인회면(ABC).html">
+                            <img src="ABC_img\아이콘\로그인.png" alt="">
+                        </a>
+                        <a href="./회원가입화면.html">
+                            <img src="ABC_img/아이콘/회원가입.png" alt="">
+                        </a>
+                   </div>
+                </div>
+            </div>
+           <div class="header_bot_box">
+            <div class="header_bottom"> 
+                <ul class="header_bottom_ul">
+                    <li><a href="hotdeal.html?cate_no=0">HOT DEAL</a></li>
+                    <li><a href="newarrivals.html?cate_no=1">NEW ARRIVALS</a></li>
+                    <li><a href="mdpick.html?cate_no=2">MD"S PICK</a></li>
+                    <li><a href="trend.html?cate_no=3">TRAND ON</a></li>
+                    <li><a href="pick.html?cate_no=4">+ PICK</a></li>
+                    <li><a href="best.html?cate_no=5">BEST BRAND</a></li>
+                    <li class="bar"></li>
+                    
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="search...">
+                    <img src="https://abcmart.a-rt.com/static/images/common/comm_header_icon_search.png" alt="">
+                </div>
+         </div>
+           </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <form action="#" method="post" name="join" id="ioin" onsubmit="return joinform_check()">
+
+                <div class="title"><h1 style="font-size: 21px;">회원가입</h1></div>
+                <div class="name">
+                    <label for="id">아이디</label>
+                    <input class="Check" id="id"  type="text" placeholder="아이디를 입력해 주세요." maxlength="20">
+                    <div id="idError" class="error"></div>
+                </div>
+                <div class="password">
+                    <label for="pw">비밀번호</label>
+                    <input class="Check" id="pw" type="password" placeholder="비밀번호를 입력해 주세요." maxlength="20">
+                    <div id="pwError" class="error"></div>
+                </div>
+                <div class="passwordCheck">
+                    <label for="pwCheck">비밀번호 확인</label>
+                    <input class="Check" id="pwCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+                    <div id="pwCheckError" class="error"></div>
+                </div>
+                <div class="email">
+                    <label for="email_id">이메일</label>
+                    <input type="text" name="email_id" id="email_id">@
+                    <input type="text" name="email_add" id="email_add">
+                    <select name="email_sel" id="email_sel" onchange="change_email();">
+                        <option value="">직접입력</option>
+                        <option value="naver.com">naver</option>
+                        <option value="gmail.com">gmail</option>
+                        <option value="nate.com">nate</option>
+                    </select>
+                    <div id="emailError" class="error"></div>
+                </div>
+                
+        
+                
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="signUp">
+                    <button type="submit" onclick="joinform_check()">가입하기</button>
+                </div>
+            </form>
+            </div>
+        </main>
+<!-- 푸터 -->
+<footer>
+    <div class="footer_top">
+        <div class="footer_top_txt">
+            <h1>통합 고객센터</h1> <span>1234-1234 월~금 13:00 ~ 18:00(주말,공휴일 휴뮤)</span>
+        </div>
+        <div class="footer_main">
+            <div class="f_left">
+                <div class="f_left_logo">
+                    <img src="./ABC_img/아이콘/footer_logo.png" alt="">
+                </div>
+                <div class="f_left_txt">
+                    <p>(주)에이비씨마트 코리아ㅣ대표이사ㅣ홍길동ㅣ주소 : 000000000000</p>
+                    <p>사업자 등록번호:123-12-12345ㅣ통신판매업자신고 : 000000000000</p>
+                    <p>개인정보보호 책임자 : 홍길동 ㅣ 이메일 : qwe123@qwe123.com</p>
+                    <br>
+                    <p>사업자정보확인 : 개인정보처리방침ㅣ이용약관ㅣ멤버십 이용약관ㅣ위치정보 이용약관</p>
+                    <p>구매안전서비스 가입사실확인</p>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+//메뉴아래 바 따라 댕기기****************************************
+    $(document).ready(function() {
+        $('.bar').css({
+            width: $('.menu').eq(0).innerWidth()
+        })
+        $('.menu').mouseenter(function(){ 
+            let li_left = $(this).offset().left;
+            let ul_left = $('ul').offset().left;
+            $('.bar').css({
+                opacity: '1',
+                left: $(this).position().left,
+                width: $(this).innerWidth() 
+            })  
+        })
+        $('.menu').mouseleave(function(){ 
+            let li_left = $(this).offset().left;
+            let ul_left = $('ul').offset().left;
+            $('.bar').css({
+                opacity: '0'
+            })  
+        })
+    })
+//메뉴아래 바 따라 댕기기 끝****************************************
+
+
+//메뉴판  호버시 B_pan 나오게하기
+            $('.menu, .B_pan').hover(function(){
+
+
+            // 100판 펼치기
+            $('.B_pan').addClass('B_pan_active')
+
+
+            
+            
+            // if($(this).prop('class') == "menu_item") {
+            if($(this).hasClass('menu')) {
+            // if($(this).prop('class') != "pan") {
+            // if(!$(this).hasClass('pan')) {
+                // 판 안에 특정 번째꺼 나타나게 하기 - display: block 
+                $('.pan_item').removeClass('B_pan_active')
+                $('.pan_item').eq($(this).index()).addClass('B_pan_active')
+            }
+
+
+
+        }, function(){
+            // 100판 접기
+            $('.B_pan').removeClass('B_pan_active')
+        })
+    
+        
+// ID 입력문자 유효성검사 시작지점
+     
+ //   uid.addEventListener('click',function(){
+      function joinform_check(){
+        
+        var uid = document.getElementById('id');
+        var error_id =  document.getElementById('idError');
+
+        var pwd = document.getElementById('pw');
+        var error_pwd =  document.getElementById('pwError');
+
+        var repwd = document.getElementById('pwCheck');
+        var error_repwd =  document.getElementById('pwCheckError');
+
+        var email_id = document.getElementById("email_id");
+        var error_eamail =  document.getElementById('emailError');
+
+       if (uid.value == "") { 
+            // alert("아이디를 입력하세요.");
+            error_id.innerHTML = '아이디를 입력하세요.'
+            uid.focus(); 
+            return false; 
+        };
+
+        if (pwd.value == "") {
+            // alert("비밀번호를 입력하세요.");
+            error_pwd.innerHTML = '비밀번호를 입력하세요.'
+            pwd.focus();
+            return false;
+        };
+
+        //비밀번호 영문자+숫자+특수조합(8~25자리 입력)
+        var pwdCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
+
+        if (!pwdCheck.test(pwd.value)) {
+            // alert("비밀번호는 영문자+숫자+특수문자 조합으로 8~25자리 사용해야 합니다.");
+            error_pwd.innerHTML = '비밀번호는 영문자+숫자+특수문자 조합으로 8~25자리 사용해야 합니다.'
+            pwd.focus();
+            return false;
+        };
+
+        if (repwd.value !== pwd.value) {
+            // alert("비밀번호가 일치하지 않습니다..");
+            error_repwd.innerHTML = '비밀번호가 일치하지 않습니다.'
+            repwd.focus();
+            return false;
+        };
+
+        if (email_id.value == "") {
+            // alert("이메일 주소를 입력하세요.");
+            error_eamail.innerHTML = '이메일을 입력하시오.'
+            email_id.focus();
+            return false;
+        };
+
+        // document.join_form.submit();
+    }
+
+        //이메일 옵션 선택후 주소 자동 완성
+        function change_email() {
+        var email_add = document.getElementById("email_add");
+        var email_sel = document.getElementById("email_sel");
+
+        //지금 골라진 옵션의 순서와 값 구하기
+        var idx = email_sel.options.selectedIndex;
+        var val = email_sel.options[idx].value;
+
+        email_add.value = val;
+        }
+      
+     
+
+
+
+
+
+</script>
+</body>
+</html>
