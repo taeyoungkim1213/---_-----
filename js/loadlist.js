@@ -1,5 +1,5 @@
 const ITEM_LIST = [
-//hotdeal
+//hotdeal [0]
     [
         {item_no: 0, src: '0.jpg', title: '비에스큐티바이클래시',desc: '887 뭔헨 독일군 스니커즈', o_price: 84500, s_price: 39800,},
         {item_no: 1, src: '1.jpg', title: '나이키',desc: '우먼스 나이키다운쉬프터12', o_price: 79000, s_price: 39000, },
@@ -14,33 +14,59 @@ const ITEM_LIST = [
         {item_no: 10, src: '10.jpg', title: '앨빈클로',desc: '앨빈클로 마운티널스 루즈핏 후드집업 AZH564', o_price: 65900, s_price: 29800, },
         {item_no: 11, src: '11.jpg', title: '커스텀에이드',desc: '4.5cm 캔버스 스니커즈 스탠다드', o_price: 99000, s_price: 38250, },
     ],
-//newarrivals
-    [
-   
-        {item_no: 0, src: '0.jpg', title: '아디다스',desc: '가젤 우먼스',s_price: 12900},
-        {item_no: 1, src: '1.jpg', title: '아디다스',desc: '가젤 우먼스',s_price: 12900},
-        {item_no: 2, src: '2.jpg', title: '아디다스',desc: '가젤 우먼스',s_price: 12900},
-        {item_no: 3, src: '3.jpg', title: '아디다스',desc: '가젤 우먼스',s_price: 12900},
-        {item_no: 4, src: '4.jpg', title: '스케쳐스(슬립인스)',desc: '맥스 쿠셔닝',s_price: 13900},
-        {item_no: 5, src: '5.jpg', title: '스케쳐스(슬립인스)',desc: '맥스 쿠셔닝',s_price: 13900},
-        {item_no: 6, src: '6.jpg', title: '스케쳐스(슬립인스)',desc: '맥스 쿠셔닝',s_price: 13900},
-        {item_no: 7, src: '7.jpg', title: '스케쳐스(슬립인스)',desc: '맥스 쿠셔닝',s_price: 13900},
-        {item_no: 8, src: '8.jpg', title: '에이비씨 셀렉트',desc: '베이비 샤크 런',s_price: 59000},
-        {item_no: 9, src: '9.jpg', title: '에이비씨 셀렉트',desc: '베이비 샤크 런',s_price: 59000},
-        {item_no: 10, src: '10.jpg', title: '크록스',desc: '클래식 컬러 딥 클로그 T',s_price: 49900},
-        {item_no: 11, src: '11.jpg', title: '크록스',desc: '클래식 컬러 딥 클로그 T',s_price: 49900},
-        {item_no: 12, src: '12.jpg', title: '크록스',desc: '클래식 컬러 딥 클로그 T',s_price: 49900},
-        {item_no: 13, src: '13.jpg', title: '휠라',desc: '휠라 꾸미 라이트 레빗',s_price: 69000},
-        {item_no: 14, src: '14.jpg', title: '휠라',desc: '휠라 꾸미 라이트 레빗',s_price: 69000},
-        {item_no: 15, src: '15.jpg', title: '휠라',desc: '패디드 숄더 백',s_price: 59000},
-        {item_no: 16, src: '16.jpg', title: '휠라',desc: '패디드 숄더 백',s_price: 59000},
+//newarrivals [1]
+    [   
+        {item_no: 0, src: '0.jpg', title: '아디다스',desc: '가젤 우먼스', o_price: 12900,s_price: 12900},
+        {item_no: 1, src: '1.jpg', title: '아디다스',desc: '가젤 우먼스', o_price: 12900,s_price: 12900},
+        {item_no: 2, src: '2.jpg', title: '아디다스',desc: '가젤 우먼스', o_price: 12900,s_price: 12900},
+        {item_no: 3, src: '3.jpg', title: '아디다스',desc: '가젤 우먼스', o_price: 12900,s_price: 12900},
+        {item_no: 4, src: '4.jpg', title: '스케쳐스(슬립인스)',desc: '맥스 쿠셔닝', o_price: 13900,s_price: 13900},
+        {item_no: 5, src: '5.jpg', title: '스케쳐스(슬립인스)',desc: '맥스 쿠셔닝', o_price: 13900,s_price: 13900},
+        {item_no: 6, src: '6.jpg', title: '스케쳐스(슬립인스)',desc: '맥스 쿠셔닝', o_price: 13900,s_price: 13900},
+        {item_no: 7, src: '7.jpg', title: '스케쳐스(슬립인스)',desc: '맥스 쿠셔닝', o_price: 13900,s_price: 13900},
+        {item_no: 8, src: '8.jpg', title: '에이비씨 셀렉트',desc: '베이비 샤크 런', o_price: 59000,s_price: 59000},
+        {item_no: 9, src: '9.jpg', title: '에이비씨 셀렉트',desc: '베이비 샤크 런', o_price: 59000,s_price: 59000},
+        {item_no: 10, src: '10.jpg', title: '크록스',desc: '클래식 컬러 딥 클로그 T', o_price: 19900,s_price: 49900},
+        {item_no: 11, src: '11.jpg', title: '크록스',desc: '클래식 컬러 딥 클로그 T', o_price: 19900,s_price: 49900},
+        {item_no: 12, src: '12.jpg', title: '크록스',desc: '클래식 컬러 딥 클로그 T', o_price: 19900,s_price: 49900},
+        {item_no: 13, src: '13.jpg', title: '휠라',desc: '휠라 꾸미 라이트 레빗', o_price: 69000,s_price: 69000},
+        {item_no: 14, src: '14.jpg', title: '휠라',desc: '휠라 꾸미 라이트 레빗', o_price: 69000,s_price: 69000},
+        {item_no: 15, src: '15.jpg', title: '휠라',desc: '패디드 숄더 백', o_price: 59000,s_price: 59000},
+        {item_no: 16, src: '16.jpg', title: '휠라',desc: '패디드 숄더 백', o_price: 59000,s_price: 59000},
     ],
+// mdpick [2]
     [
-        
+        {item_no: 0, src: '0.jpg', title: '뉴발란스',desc: 'MR530SG', o_price: 11900,s_price: 11900},
+        {item_no: 1, src: '1.jpg', title: '뉴발란스',desc: 'MR530KA', o_price: 12900,s_price: 12900},
+        {item_no: 2, src: '2.jpg', title: '뉴발란스',desc: 'MR530SE', o_price: 10900,s_price: 10900},
+        {item_no: 3, src: '3.jpg', title: '뉴발란스',desc: 'MR530AD', o_price: 89000,s_price: 89000},
+        {item_no: 4, src: '4.jpg', title: '뉴발란스',desc: 'MR530AG', o_price: 89000,s_price: 89000},
+        {item_no: 5, src: '5.gif', title: '에이비씨 설렉트',desc: '라이트닝 스니커즈', o_price: 65000,s_price: 65000},
+        {item_no: 6, src: '6.jpg', title: '에이비씨 설렉트',desc: '라이트닝 스니커즈', o_price: 65000,s_price: 65000},
+        {item_no: 7, src: '7.jpg', title: '에이비씨 설렉트',desc: '플랫나이트 니트 슬립 온', o_price: 59000,s_price: 59000},
+        {item_no: 8, src: '8.jpg', title: '에이비씨 설렉트',desc: '플랫나이트 니트 슬립 온', o_price: 59000,s_price: 59000},
+        {item_no: 9, src: '9.jpg', title: '에이비씨 설렉트',desc: '플랫나이트 니트 슬립 온', o_price: 59000,s_price: 59000},
+        {item_no: 10, src: '10.jpg', title: '다이노솔즈',desc: '티렉스 에어 볼테이노', o_price: 79000,s_price: 79000},
+        {item_no: 11, src: '11.jpg', title: '다이노솔즈',desc: '티렉스 에어 볼테이노', o_price: 79000,s_price: 79000},
+        {item_no: 12, src: '12.jpg', title: '다이노솔즈',desc: '안킬로 3D 밸크로', o_price: 79000,s_price: 79000},
+        {item_no: 13, src: '13.jpg', title: '다이노솔즈',desc: '안킬로 3D 밸크로', o_price: 79000,s_price: 79000},
+        {item_no: 14, src: '14.jpg', title: '다이노솔즈',desc: '안킬로 3D 밸크로', o_price: 79000,s_price: 79000},
+        {item_no: 15, src: '15.jpg', title: '나이키',desc: '코트 보로우 리크래프트 그레이드', o_price: 69000,s_price: 69000},
+        {item_no: 16, src: '16.jpg', title: '나이키',desc: '코트 보로우 리크래프트 그레이드', o_price: 69000,s_price: 69000},
+        {item_no: 17, src: '17.jpg', title: '나이키',desc: '코트 보로우 리크래프트 그레이드', o_price: 69000,s_price: 69000},
+        {item_no: 18, src: '18.jpg', title: '나이키',desc: '나이키 스타 러너4 넥스트네이처 그레이드 스쿨', o_price: 69000,s_price: 69000},
+        {item_no: 19, src: '19.jpg', title: '나이키',desc: '나이키 스타 러너4 넥스트네이처 그레이드 스쿨', o_price: 69000,s_price: 69000},
+    ],
+// trend [3]
+    [
+        {item_no: 0, src: '0.jpg', title: 'EDITORIAL',desc: '건강미넘치는 라이프 스타일', o_price: 11900,s_price: 11900},
+        {item_no: 1, src: '1.jpg', title: 'PUMA ADELINA LAUNCHING',desc: '이민정 워킹화 걸으며 느끼는 부드러움', o_price: 12900,s_price: 12900},
+        {item_no: 2, src: '2.jpg', title: 'G-LOG',desc: '나의 스타일을 공유하고 의견을 나누는 공간,click', o_price: 10900,s_price: 10900},
+        {item_no: 3, src: '3.jpg', title: 'BSQT&파스코로젠',desc: '다가오는 가을 겨울 더비슈즈로 스타일링', o_price: 89000,s_price: 89000},
     ]
 ]
 
-const menu_array = ['hotdeal','newarrivals','mdpick','trend','best','baaner'];
+const menu_array = ['hotdeal','newarrivals','mdpick','trend','best','pick'];
 const title_array = ['HOT DEAL','NEW ARRIVALS','MD_S PICK','TRAND ON','+ PICK','BEST BRAND'];
 const img_addr = "ABC_img/"; 
 

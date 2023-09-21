@@ -102,58 +102,7 @@
 </div>
 
 <script>
-    
-    //메뉴아래 바 따라 댕기기****************************************
-        $(document).ready(function() {
-            $('.bar').css({
-                width: $('.menu').eq(0).innerWidth()
-            })
-            $('.menu').mouseenter(function(){ 
-                let li_left = $(this).offset().left;
-                let ul_left = $('ul').offset().left;
-                $('.bar').css({
-                    opacity: '1',
-                    left: $(this).position().left,
-                    width: $(this).innerWidth() 
-                })  
-            })
-            $('.menu').mouseleave(function(){ 
-                let li_left = $(this).offset().left;
-                let ul_left = $('ul').offset().left;
-                $('.bar').css({
-                    opacity: '0'
-                })  
-            })
-        })
-    //메뉴아래 바 따라 댕기기 끝****************************************
-    
-    
-    //메뉴판  호버시 B_pan 나오게하기
-             $('.menu, .B_pan').hover(function(){
-    
-    
-                // 100판 펼치기
-                $('.B_pan').addClass('B_pan_active')
-    
-    
-               
-                
-                // if($(this).prop('class') == "menu_item") {
-                if($(this).hasClass('menu')) {
-                // if($(this).prop('class') != "pan") {
-                // if(!$(this).hasClass('pan')) {
-                    // 판 안에 특정 번째꺼 나타나게 하기 - display: block 
-                    $('.pan_item').removeClass('B_pan_active')
-                    $('.pan_item').eq($(this).index()).addClass('B_pan_active')
-                }
-    
-    
-    
-            }, function(){
-                // 100판 접기
-                $('.B_pan').removeClass('B_pan_active')
-            })
-        
+
     </script>
 </body>
 </html>

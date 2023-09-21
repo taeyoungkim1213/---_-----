@@ -4,6 +4,7 @@
 /* .sec {
     margin-top: 180px;
 } */
+.sec_body{padding: 0 30px;}
 .contents_area{margin-top: 150px;}
 .container{ display: inline;}
 footer{margin-top: 100px;}
@@ -19,7 +20,11 @@ footer{margin-top: 100px;}
     gap: 10px; 
     justify-content: center;
 }
+.item_container li{
+    width: calc((100% - (10px * 3))/ 4);
+}
 .item {
+
     margin-bottom: 100px;
 }
 .item_img {
@@ -44,8 +49,16 @@ footer{margin-top: 100px;}
     line-height: 35px;
     margin-bottom: 13px;
 }
-.origin_price 
-,.sale_price,
+.origin_price{
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+} 
+.sale_price{
+    font-weight: 700;
+    font-size: 24px;
+    color: red;
+}
 .item_desc {
     color: #555;
     font-size: 12px;
