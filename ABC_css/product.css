@@ -4,7 +4,7 @@
 /* .sec {
     margin-top: 180px;
 } */
-.sec_body{padding: 0 30px;}
+.sec_body{padding: 0 30px; max-width: 1200px; margin: 0 auto;}
 .contents_area{margin-top: 150px;}
 .container{ display: inline;}
 footer{margin-top: 100px;}

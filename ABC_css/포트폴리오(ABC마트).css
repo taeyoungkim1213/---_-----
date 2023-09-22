@@ -137,9 +137,12 @@ body{overflow-x: hidden;}
     font-size: 15px;
     font-weight: 900;
 }
-.menu:hover{
-    font-style: italic;
+.header_bottom_ul li:hover{
+    color: yellow;
+    /* font-style: italic; */
+    scale: 1.1;
 }
+
 .bar { 
     height: 5px;
     background-color: yellow;
@@ -256,7 +259,7 @@ body{overflow-x: hidden;}
     right: -37px;
 }
 /* 메인배너 스와이퍼 슬라이드 */
-.container{ height: 32vw; margin-top: 130px;}
+.container{  margin-top: 130px;}
 .gallbox img {display: block;width: 100%; height:100%;}
 
 /* 슬라이드 글씨 */
@@ -360,17 +363,30 @@ section{
     position: absolute;
     left: 50%; transform: translateX(-50%);
 }
-.going_new_arrivals{
-    float: right;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    
-}
-.mySwiper3 img{width: 100%;}
-.new_price{
+.new_img img{ width: 100%;}
+.new_img{position: relative;}
+.new_img:hover{scale: 1.1;}
+.new_img:hover .new_txt{opacity: 1;}
+.new_txt{
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     font-weight: 900;
-    font-size: 19px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(55, 55, 55, 0.3);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.new_arrivals_box ul{display: flex; flex-wrap: wrap; gap: 20px;}
+.new_arrivals_box li{
+    width: calc((100% - (3 * 20px))/ 4);
 }
 /* review_box 시작지점 */
 .mySwiper4{
@@ -667,7 +683,6 @@ footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400p
 .f_left_txt{margin-top: 20px;}
 .f_left_txt p{font-size: 13px; color: #666;padding: 3px 0;}
 
-/* 750때 햄버거 넣기 */
 @media (max-width:1200px){
     body{overflow-x: hidden;}
     .pick_list_box li{ width: calc((100% - (20px * 1))/ 2);}
@@ -685,7 +700,7 @@ footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400p
     .going_deal a { font-size: 14px;}
     .md_item_box li { width: calc((100% - (2 * 20px))/ 3);}
 } 
-/* 650때 햄버거 넣기 */
+/* 750때 햄버거 넣기 */
 @media (max-width:750px){
     body{overflow-x: hidden;}
     #hotdeal_sec{padding-top: 80px;}

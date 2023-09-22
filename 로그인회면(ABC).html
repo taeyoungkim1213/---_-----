@@ -23,6 +23,16 @@
                     <div class="line" id="line_bot"></div>
                 </div>
                 <!-- 햄버거 열리는 판 -->
+                <div class="menu_pan" id="menu_pan">
+                    <ul>
+                        <li><a href="hotdeal.html?cate_no=0"> 》 HOT DEAL 《</a></li>
+                        <li><a href="newarrivals.html?cate_no=1"> 》 NEW ARRIVALS 《</a></li>
+                        <li><a href="mdpick.html?cate_no=2"> 》 MD"S PICK 《</a></li>
+                        <li><a href="trend.html?cate_no=3"> 》 TRAND ON 《</a></li>
+                        <li><a href="pick.html?cate_no=4"> 》 + PICK 《</a></li>
+                        <li><a href="best.html?cate_no=5"> 》 BEST BRAND 《</a></li>
+                    </ul>
+                </div>
                 <div class="logo">
                     <a href="./포트폴리오(ABC마트).html"><img src="https://image.a-rt.com/art/system/site/202207/1658299296317.png" alt=""></a>
                 </div>
@@ -102,7 +112,70 @@
 </div>
 
 <script>
+/***** 햄버거 메뉴판 나오는 코드 시작 *****/
+$(document).ready(function() {
+             let chk = true;
 
+$('.hamberg').click(function(){
+$('.menu_pan').toggleClass('menu_pan_active')
+
+/***** X자 만드는 코드 시작 *****/
+    if(chk) { // X자 만드는부분
+        $('#line_top').css({
+            transform: 'translateY(10px)',
+        })
+        setTimeout(function(){
+            $('#line_top').css({
+                transform: 'translateY(10px) rotate(45deg)',
+            })
+        }, 500)
+
+        setTimeout(function(){
+            $('#line_mid').css({
+                transform: 'scale(0)'
+            })
+        }, 500)
+
+        $('#line_bot').css({
+            transform: 'translateY(-10px)',
+        })
+        setTimeout(function(){
+            $('#line_bot').css({
+                transform: 'translateY(-10px) rotate(-45deg)',
+            })
+        }, 500)
+    }
+    else { // = 자 만드는부분
+        $('#line_top').css({
+            transform: 'translateY(10px) rotate(0)',
+        })
+        setTimeout(function(){
+            $('#line_top').css({
+                transform: 'translateY(0)',
+            })
+        }, 500)
+
+        setTimeout(function(){
+            $('#line_mid').css({
+                transform: 'scale(1)'
+            })
+        }, 500)
+
+        $('#line_bot').css({
+            transform: 'translateY(-10px) rotate(0)',
+        })
+        setTimeout(function(){
+            $('#line_bot').css({
+                transform: 'translateY(0)',
+            })
+        }, 500)
+    }
+    chk = !chk;
+
+    /***** X자 만드는 코드 끝 *****/
+})
+})
+/***** 햄버거 메뉴판 나오는 코드 끝 *****/
     </script>
 </body>
 </html>

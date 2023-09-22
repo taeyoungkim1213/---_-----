@@ -18,9 +18,9 @@
                 <div class="header_top">
                     <!-- 햄버거 반응형 -->
                     <div class="hamberg">
-                        <div class="line" id="line_top"></div>
-                        <div class="line" id="line_mid"></div>
-                        <div class="line" id="line_bot"></div>
+                        <div class="h_line" id="line_top"></div>
+                        <div class="h_line" id="line_mid"></div>
+                        <div class="h_line" id="line_bot"></div>
                     </div>
                     <!-- 햄버거 열리는 판 -->
                     <div class="menu_pan" id="menu_pan">
@@ -137,56 +137,70 @@
 
 <script>
 
-//메뉴아래 바 따라 댕기기****************************************
-    $(document).ready(function() {
-        $('.bar').css({
-            width: $('.menu').eq(0).innerWidth()
+/***** 햄버거 메뉴판 나오는 코드 시작 *****/
+$(document).ready(function() {
+             let chk = true;
+
+$('.hamberg').click(function(){
+$('.menu_pan').toggleClass('menu_pan_active')
+
+/***** X자 만드는 코드 시작 *****/
+    if(chk) { // X자 만드는부분
+        $('#line_top').css({
+            transform: 'translateY(10px)',
         })
-        $('.menu').mouseenter(function(){ 
-            let li_left = $(this).offset().left;
-            let ul_left = $('ul').offset().left;
-            $('.bar').css({
-                opacity: '1',
-                left: $(this).position().left,
-                width: $(this).innerWidth() 
-            })  
+        setTimeout(function(){
+            $('#line_top').css({
+                transform: 'translateY(10px) rotate(45deg)',
+            })
+        }, 500)
+
+        setTimeout(function(){
+            $('#line_mid').css({
+                transform: 'scale(0)'
+            })
+        }, 500)
+
+        $('#line_bot').css({
+            transform: 'translateY(-10px)',
         })
-        $('.menu').mouseleave(function(){ 
-            let li_left = $(this).offset().left;
-            let ul_left = $('ul').offset().left;
-            $('.bar').css({
-                opacity: '0'
-            })  
+        setTimeout(function(){
+            $('#line_bot').css({
+                transform: 'translateY(-10px) rotate(-45deg)',
+            })
+        }, 500)
+    }
+    else { // = 자 만드는부분
+        $('#line_top').css({
+            transform: 'translateY(10px) rotate(0)',
         })
-    })
-//메뉴아래 바 따라 댕기기 끝****************************************
+        setTimeout(function(){
+            $('#line_top').css({
+                transform: 'translateY(0)',
+            })
+        }, 500)
 
+        setTimeout(function(){
+            $('#line_mid').css({
+                transform: 'scale(1)'
+            })
+        }, 500)
 
-//메뉴판  호버시 B_pan 나오게하기
-            $('.menu, .B_pan').hover(function(){
-
-
-            // 100판 펼치기
-            $('.B_pan').addClass('B_pan_active')
-
-
-            
-            
-            // if($(this).prop('class') == "menu_item") {
-            if($(this).hasClass('menu')) {
-            // if($(this).prop('class') != "pan") {
-            // if(!$(this).hasClass('pan')) {
-                // 판 안에 특정 번째꺼 나타나게 하기 - display: block 
-                $('.pan_item').removeClass('B_pan_active')
-                $('.pan_item').eq($(this).index()).addClass('B_pan_active')
-            }
-
-
-
-        }, function(){
-            // 100판 접기
-            $('.B_pan').removeClass('B_pan_active')
+        $('#line_bot').css({
+            transform: 'translateY(-10px) rotate(0)',
         })
+        setTimeout(function(){
+            $('#line_bot').css({
+                transform: 'translateY(0)',
+            })
+        }, 500)
+    }
+    chk = !chk;
+
+    /***** X자 만드는 코드 끝 *****/
+})
+})
+/***** 햄버거 메뉴판 나오는 코드 끝 *****/
     
         
 // ID 입력문자 유효성검사 시작지점

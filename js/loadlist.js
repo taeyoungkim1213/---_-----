@@ -63,16 +63,55 @@ const ITEM_LIST = [
         {item_no: 1, src: '1.jpg', title: 'PUMA ADELINA LAUNCHING',desc: '이민정 워킹화 걸으며 느끼는 부드러움', o_price: 12900,s_price: 12900},
         {item_no: 2, src: '2.jpg', title: 'G-LOG',desc: '나의 스타일을 공유하고 의견을 나누는 공간,click', o_price: 10900,s_price: 10900},
         {item_no: 3, src: '3.jpg', title: 'BSQT&파스코로젠',desc: '다가오는 가을 겨울 더비슈즈로 스타일링', o_price: 89000,s_price: 89000},
+    ],
+//+ pick [4]
+    [
+        {item_no: 0, src: '0.jpg', title: '마크모크',desc: '겨울 부츠 보고 가세요.', o_price: 46000,s_price: 46000},
+        {item_no: 1, src: '1.jpg', title: '누오보',desc: '탈리아2', o_price: 54000,s_price: 19000},
+        {item_no: 2, src: '2.jpg', title: '케즈',desc: '케즈 챔피온', o_price: 59000,s_price: 41000},
+        {item_no: 3, src: '3.jpg', title: '누오보',desc: '시트론 1', o_price: 49000,s_price: 19000},
+        {item_no: 4, src: '4.jpg', title: '컨버스',desc: '척 70 시즈널 컬러 스쿼럴 프렌드', o_price: 95000,s_price: 66000},
+        {item_no: 5, src: '5.jpg', title: '반스',desc: '올드 스쿨 VR3', o_price: 89000,s_price: 89000},
+        {item_no: 6, src: '6.jpg', title: '반스',desc: '매버릭', o_price: 89000,s_price: 89000},
+        {item_no: 7, src: '7.jpg', title: '반스',desc: '슬립-ER2', o_price: 89000,s_price: 89000},
+        {item_no: 8, src: '8.jpg', title: '뉴발란스',desc: 'W480SK5', o_price: 99000,s_price: 99000},
+    ],
+//best[5]
+    [
+        {item_no: 0, src: '0.jpeg', title: '나이키',desc: '나이키 에어 맥스 솔로', o_price: 11900,s_price:11900},
+        {item_no: 1, src: '1.jpeg', title: '나이키',desc: '나이키 에어 맥스 솔로', o_price: 11900,s_price:11900},
+        {item_no: 2, src: '2.jpeg', title: '나이키',desc: '나이키 에어 맥스 솔로', o_price: 11900,s_price:11900},
+        {item_no: 3, src: '3.jpeg', title: '나이키',desc: '나이키 모티바', o_price: 12900,s_price: 12900},
+        {item_no: 4, src: '4.jpg', title: '아디다스',desc: '슈퍼스타', o_price: 13900,s_price: 13900},
+        {item_no: 5, src: '5.jpg', title: '아디다스',desc: '슈퍼스타', o_price: 13900,s_price: 13900},
+        {item_no: 6, src: '6.jpg', title: '아디다스',desc: '슈퍼스타', o_price: 69000,s_price: 69000},
+        {item_no: 7, src: '7.jpg', title: '아디다스',desc: '슈퍼스타', o_price: 69000,s_price: 69000},
+        {item_no: 8, src: '8.jpg', title: '호킨스',desc: '마이크로 라이트 플레인', o_price: 129000,s_price: 129000},
+        {item_no: 9, src: '9.jpg', title: '호킨스',desc: '마이크로 라이트 플레인', o_price: 129000,s_price: 129000},
+        {item_no: 10, src: '10.jpg', title: '호킨스',desc: '마이크로 라이트 플레인', o_price: 129000,s_price: 129000},
+        {item_no: 11, src: '11.jpg', title: '호킨스',desc: '마이크로 라이트 플레인', o_price: 129000,s_price: 129000},
+        {item_no: 12, src: '12.jpg', title: '반스',desc: '어센틱-컬러 띠어리 비컨 블루', o_price: 75000,s_price: 75000},
+        {item_no: 13, src: '13.jpg', title: '반스',desc: '올드 스쿨-컬러 띠어리 비컨 블루', o_price: 89000,s_price: 89000},
+        {item_no: 14, src: '14.jpg', title: '반스',desc: '어센틱', o_price: 69000,s_price: 69000},
+        {item_no: 15, src: '15.jpg', title: '반스',desc: '올드 스쿨', o_price: 89000,s_price: 89000},
+        {item_no: 16, src: '16.jpeg', title: '뉴발란스',desc: 'MR530SG', o_price: 119000,s_price: 119000},
+        {item_no: 17, src: '17.jpeg', title: '뉴발란스',desc: 'MR530KA', o_price: 129000,s_price: 129000},
+        {item_no: 18, src: '18.jpeg', title: '뉴발란스',desc: 'ML530G2', o_price: 79000,s_price: 79000},
+        {item_no: 19, src: '19.jpeg', title: '뉴발란스',desc: 'ML530QJ2', o_price: 79000,s_price: 79000},
+        {item_no: 20, src: '20.jpg', title: '컨버스',desc: '척테일러 올스타 블랙', o_price: 119000,s_price: 119000},
+        {item_no: 21, src: '21.jpg', title: '컨버스',desc: '척 70 클래식 블랙', o_price: 119000,s_price: 119000},
+        {item_no: 22, src: '22.jpg', title: '컨버스',desc: '척 70 시즈널 빈티지 캔버스', o_price: 119000,s_price: 119000},
+        {item_no: 23, src: '23.jpg', title: '컨버스',desc: '척 70 빈티지 미드나잇클로버', o_price: 129000,s_price: 129000},
     ]
 ]
 
-const menu_array = ['hotdeal','newarrivals','mdpick','trend','best','pick'];
-const title_array = ['HOT DEAL','NEW ARRIVALS','MD_S PICK','TRAND ON','+ PICK','BEST BRAND'];
+const menu_array = ['hotdeal','newarrivals','mdpick','trend','pick','best'];
+const title_array = ['HOT DEAL','NEW ARRIVALS','MD_S PICK','TRAND ON','BEST BRAND','+ PICK'];
 const img_addr = "ABC_img/"; 
 
 function get_url_info(key) {
     let url =location.href;
-    url = url.split("?")[1];
+    url = url.split("?")[1]
     if(url.length > 1){
         url = url.split("&")
         for(let i=0; i<url.length; i++){

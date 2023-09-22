@@ -2,7 +2,7 @@ $(document).ready(function(){
     let cate_no = get_url_info("cate_no");
     let item_no = get_url_info("item_no");
 
-    console.log(ITEM_LIST[cate_no][item_no])
+    // console.log(ITEM_LIST[cate_no][item_no])
     
     const ITEM = ITEM_LIST[cate_no][item_no];
 
@@ -137,10 +137,10 @@ $(document).ready(function(){
     $(document).on('click', '.btn_close_opt', function(e){
         $(this).parent().parent('.opt_item').remove();
 
-        console.log(btn_chk)
+        // console.log(btn_chk)
         let tmp_idx = $(this).next().val(); // 현재 클릭한 X 다음 요소(몇번째꺼냐 btn_chk = [false, false, false]; )
         btn_chk[tmp_idx] = false;
-        console.log(btn_chk)
+        // console.log(btn_chk)
         
         total_price();
     })
@@ -150,7 +150,7 @@ $(document).ready(function(){
         let total_price = 0;
 
         for(let i=0; i<$('.txt_qty').length; i++) {
-            console.log($('.txt_qty').eq(i).val() , $('.tb_s_price').text().replace("원","").replace(",","")    )
+            // console.log($('.txt_qty').eq(i).val() , $('.tb_s_price').text().replace("원","").replace(",","")    )
             total_price += $('.txt_qty').eq(i).val() * $('.tb_s_price').text().replace("원","").replace(",","")    
         }
         $('.total_price').text(total_price.toLocaleString("ko")+"원")
@@ -181,7 +181,7 @@ $(document).ready(function(){
         })
 
         
-        console.log(event.offsetX, event.offsetY) 
+        // console.log(event.offsetX, event.offsetY) 
     });
 
     
@@ -198,3 +198,67 @@ $(document).ready(function(){
 
 });
 
+/***** 햄버거 메뉴판 나오는 코드 시작 *****/
+$(document).ready(function() {
+    let chk = true;
+
+$('.hamberg').click(function(){
+$('.menu_pan').toggleClass('menu_pan_active')
+
+/***** X자 만드는 코드 시작 *****/
+if(chk) { // X자 만드는부분
+$('#line_top').css({
+   transform: 'translateY(10px)',
+})
+setTimeout(function(){
+   $('#line_top').css({
+       transform: 'translateY(10px) rotate(45deg)',
+   })
+}, 500)
+
+setTimeout(function(){
+   $('#line_mid').css({
+       transform: 'scale(0)'
+   })
+}, 500)
+
+$('#line_bot').css({
+   transform: 'translateY(-10px)',
+})
+setTimeout(function(){
+   $('#line_bot').css({
+       transform: 'translateY(-10px) rotate(-45deg)',
+   })
+}, 500)
+}
+else { // = 자 만드는부분
+$('#line_top').css({
+   transform: 'translateY(10px) rotate(0)',
+})
+setTimeout(function(){
+   $('#line_top').css({
+       transform: 'translateY(0)',
+   })
+}, 500)
+
+setTimeout(function(){
+   $('#line_mid').css({
+       transform: 'scale(1)'
+   })
+}, 500)
+
+$('#line_bot').css({
+   transform: 'translateY(-10px) rotate(0)',
+})
+setTimeout(function(){
+   $('#line_bot').css({
+       transform: 'translateY(0)',
+   })
+}, 500)
+}
+chk = !chk;
+
+/***** X자 만드는 코드 끝 *****/
+})
+})
+/***** 햄버거 메뉴판 나오는 코드 끝 *****/
