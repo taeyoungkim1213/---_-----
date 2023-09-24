@@ -125,3 +125,21 @@ footer{margin-top: 100px;}
 #new .item_img img:hover {
     opacity: 1;
 } 
+
+@media (max-width:1200px){
+    .item_container li{
+        width: calc((100% - (10px * 2))/ 3);
+    }
+}
+
+@media (max-width:750px){
+    .item_container li{
+        width: calc((100% - (10px * 1))/ 2);
+    }
+} 
+@media (max-width:450px){
+    .item_container li{
+        width:60%
+    }
+    .item_init {font-size: 30px;}
+} 

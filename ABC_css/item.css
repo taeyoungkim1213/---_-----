@@ -118,6 +118,7 @@
 .tb_title {
     width: 100px;
     padding: 10px 0;
+    font-size: 16px;
 }
 .nomal_price{
     font-size: 14px;
@@ -135,6 +136,7 @@
 
 .color_box_container {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 .size_box {
@@ -271,5 +273,16 @@
 @media (max-width:750px){
     .hamberg{display: block;}
     .menu_pan{display: block;}
-   
+    .item_title{padding: 0; font-size: 16px;}
+    .item_desc{margin: 0;}
+    .tb_title{padding: 0;}
+    .tb_s_price{font-size: 14px;}
+    .total_price_box{margin: 15px 0;}
+    .item_opt{font-size: 10px;}
+    .opt_item > div{padding: 0;}
+    .btn_qty{width: 20px; height: 20px;}
+    .txt_qty {width: 30px;height: 20px;font-size: 10px;}
+} 
+@media (max-width:1200px){
+  
 } 

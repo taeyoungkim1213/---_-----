@@ -14,6 +14,20 @@
 </head>
 <body>
     <div class="wrap">
+        <!-- 레이어팝업창 -->
+        <div class="layer_parent">
+            <div class="layer_box">
+                <div class="layer_img">
+                    <a href="#"><img src="./ABC_img/pop.jpg" alt=""></a>
+                </div>
+                
+                <div class="layer_close">
+                    <span id="layer_24close">오늘 하루 그만 보기</span>
+                    <span id="layer_close">닫기</span>
+                </div>
+            </div>
+        </div>
+        <!-- 탑버튼 -->
         <div id="top_box"></div>
         <div class="top_btn"><a href="#top_box">TOP</a></div>
         <header class="header">
@@ -73,52 +87,52 @@
              <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a href="상품주문화면.html?cate_no=2&item_no=7">
                             <div class="gallbox">
-                                <p class="g_p1">항상 편안한 착용감 <br>플랫라이트
+                                <p class="g_p1">항상 편안한 착용감 <br>에이비씨 설렉트
                                     </p>
                                     <hr>
-                                <p class="g_p2">보러가기《</p>
+                                <p class="g_p2">상품 구매하기</p>
                                 <img src="./ABC_img/메인슬라이더/메인배너1.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a href="상품주문화면.html?cate_no=4&item_no=2">
                             <div class="gallbox">
-                                <p class="g_p1 txt_ani">IN MY WAY,<br> 스테파노로시</p>
+                                <p class="g_p1 txt_ani">IN MY WAY,<br>케즈 챔피온</p>
                                 <hr>
-                                <p class="g_p2">보러가기《</p>
+                                <p class="g_p2">상품 구매하기</p>
                                 <img src="./ABC_img/메인슬라이더/메인배너2.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a href="상품주문화면.html?cate_no=2&item_no=0">
                             <div class="gallbox">
-                                <p class="g_p1" style="color: black;">마크 모크<br>23 F/w 뉴 컬렉션</p>
+                                <p class="g_p1" style="color: black;">편안한 뉴발란스<br>MR530SG</p>
                                 <hr>
-                                <p class="g_p2">보러가기《</p>
+                                <p class="g_p2">상품 구매하기</p>
                                 <img src="./ABC_img/메인슬라이더/메인배너3.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a href="상품주문화면.html?cate_no=0&item_no=5">
                             <div class="gallbox">
                                 <p class="g_p1" style="color: black;">매일의 러닝을 위한<br>나이키 러닝화</p>
                                 <hr>
-                                <p class="g_p2">보러가기《</p>
+                                <p class="g_p2">상품 구매하기</p>
                                 <img src="./ABC_img/메인슬라이더/메인배너4.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a href="상품주문화면.html?cate_no=5&item_no=6">
                             <div class="gallbox">
                                 <p class="g_p1" style="color: black;">인기의 신발 아디다스</p>
                                 <hr>
-                                <p class="g_p2">보러가기《</p>
+                                <p class="g_p2">상품 구매하기</p>
                                 <img src="./ABC_img/메인슬라이더/메인배너5.jpg" alt="">
                             </div>
                         </a>
@@ -128,27 +142,27 @@
                             <div class="gallbox">
                                 <p class="g_p1">GOALSTUDIO <br>신상품 발매</p>
                                 <hr>
-                                <p class="g_p2">보러가기《</p>
+                                <p class="g_p2">상품 구매하기</p>
                                 <img src="./ABC_img/메인슬라이더/메인배너6.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a href="상품주문화면.html?cate_no=5&item_no=8">
                             <div class="gallbox">
-                                <p class="g_p1">LACOSTE LINESET <br>단독발매</p>
+                                <p class="g_p1">GET A DISCOUNT<br>호킨스 트래블러 기간한정 3만원 할인</p>
                                 <hr>
-                                <p class="g_p2">보러가기《</p>
+                                <p class="g_p2">상품 구매하기</p>
                                 <img src="./ABC_img/메인슬라이더/메인배너7.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">
+                        <a href="상품주문화면.html?cate_no=4&item_no=6">
                             <div class="gallbox">
                                 <p class="g_p1">언제나 아름다운 <br>VAN'S 구경해보세요.</p>
                                 <hr>
-                                <p class="g_p2">보러가기《</p>
+                                <p class="g_p2">상품 구매하기</p>
                                 <img src="./ABC_img/메인슬라이더/메인배너8.jpg" alt="">
                             </div>
                         </a>
@@ -1204,6 +1218,16 @@
     
 </script>
 <script>
+// 레이어팝업 닫기
+$(document).ready(function(){
+    $('#layer_24close, #layer_close').click(function(){
+        $('.layer_box').css({
+            display : 'none',
+        })
+    })
+})
+//레이어 팝업 닫기버튼 종료ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
     // 오프셋 탑 닿으면 슬라이드 나오기
 $(document).ready(function() {
         let h_o_top = $('#hotdeal_sec').offset().top

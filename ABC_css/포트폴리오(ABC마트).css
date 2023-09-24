@@ -1,4 +1,33 @@
 body{overflow-x: hidden;}
+/* 레이어 팝업 */
+.layer_parent{position: relative; left: 0;}
+.layer_box img{width: 100%;}
+.layer_box{
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    z-index: 99;
+    background-color: #666;
+}
+.layer_img{width: 100%;}
+.layer_close{
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.layer_close span{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+.layer_close span:hover{
+    font-style: italic;
+}
+
 /* 탑버튼 */
 #top_box{position: relative; top: -130px;}
 .top_btn{
