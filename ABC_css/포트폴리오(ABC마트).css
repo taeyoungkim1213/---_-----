@@ -676,6 +676,7 @@ input[name="md"]{display: none;}
 .label_list_item li{
     width: calc((100% - (20px * 3)) / 4);
 }
+.label_list_item li:hover{scale: 1.03; }
 .best_lmg img{width: 100%;}
 .best_lmg{width: 100%;}
 .best_txt{width: 100%; height: 40%; padding: 30px; box-sizing: border-box;}
@@ -733,7 +734,7 @@ footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400p
 @media (max-width:750px){
     body{overflow-x: hidden;}
     #hotdeal_sec{padding-top: 80px;}
-    #new_arrivals_sec{padding-top: 80px;}
+    #new_sec{padding-top: 80px;}
     #MD_sec{padding-top: 80px;}
     #trand_sec{padding-top: 80px;}
     #pick_sec{padding-top: 80px;}
@@ -758,4 +759,5 @@ footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400p
     .label_list_item li { width: calc((100% - (20px * 1)) / 2);}
     .bestbrand_box { margin-bottom: 650px;}
     .pick_txt_box p { font-size: 11px;}
+    .new_arrivals_box li { width: calc((100% - (1 * 20px))/ 2);}
 } 
