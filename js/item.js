@@ -99,7 +99,7 @@ $(document).ready(function(){
                                     <input type="text" value="1" class="txt_qty">
                                     <input type="button" value="+" class="btn_qty btn_plus">
 
-                                    <img src="file:///C:/Users/user1/Desktop/web/Web1,Web2/img/theComma/product/btn_price_delete.gif" alt="" class="btn_close_opt">
+                                    <img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/x-512.png" alt="" class="btn_close_opt">
                                     <input type="hidden" value="${$(this).index()}" class="opt_order">
                                     
                                 </div>
