@@ -22,7 +22,7 @@
                 </div>
                 
                 <div class="layer_close">
-                    <span id="layer_24close">오늘 하루 그만 보기</span>
+                    <span id="layer_24close" onclick="setCookie('cba_cookie', 'true', 1)">오늘 하루 그만 보기</span>
                     <span id="layer_close">닫기</span>
                 </div>
             </div>
@@ -1152,8 +1152,8 @@
 <!-- 메인배너 Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 5, // 칸 수
-        spaceBetween: 30, //gap
+        slidesPerView: 1, // 칸 수
+        spaceBetween: 10, //gap
         // freeMode: true,
         pagination: {
             el: ".swiper-pagination",
@@ -1174,13 +1174,18 @@
         direction: 'horizontal', //horizontal,vertical 배치 방향
         effect: 'fade' // 'slide', 'fade', 'cube', 'coverflow', 'flip' or 'creative'
     });
+    $('.container').hover(function(){
+        swiper.autoplay.stop();
+    }, function(){
+        swiper.autoplay.start()
+    })
     
 </script>
 
 </script>
-<!-- 리뷰 슬라이더 -->
+<!-- 핫딜 슬라이더 -->
 <script>
-    var swiper = new Swiper(".mySwiper2", {
+    var swiper2 = new Swiper(".mySwiper2", {
         slidesPerView: 4, // 칸 수
         spaceBetween: 30, //gap
         // freeMode: true,
@@ -1216,6 +1221,12 @@
         direction: 'horizontal', //horizontal,vertical 배치 방향
         effect: 'slide' // 'slide', 'fade', 'cube', 'coverflow', 'flip' or 'creative'
     });
+    $('#hotdeal_sec').hover(function(){
+        swiper.autoplay.stop();
+    }, function(){
+        swiper.autoplay.start()
+    })
+    
     
 </script>
 <script>
@@ -1227,6 +1238,15 @@ $(document).ready(function(){
         })
     })
 })
+//쿠키설정 24시간
+function setCookie(name, value, exp){
+    let dt = new Date();
+    dt.setTime(dt.getTime() + (1000*60*60*24 * exp))
+    
+    console.log(`${name}=${value};expires=${dt.toUTCString()};path=/`)
+
+    document.cookie = `${name}=${value};expires=${dt.toUTCString()};path=/`
+}
 //레이어 팝업 닫기버튼 종료ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
     // 오프셋 탑 닿으면 슬라이드 나오기
