@@ -154,7 +154,7 @@
 
 button{cursor: pointer;}
 .loginbox{
-    width: 780px;
+    max-width: 780px;
     height: 550px;
     margin: 0 auto;
     margin-top: 300px;
