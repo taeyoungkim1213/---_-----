@@ -761,4 +761,5 @@ footer{max-width: 100%; height: 400px; background-color: white; margin-top: 400p
     .bestbrand_box { margin-bottom: 650px;}
     .pick_txt_box p { font-size: 11px;}
     .new_arrivals_box li { width: calc((100% - (1 * 20px))/ 2);}
+    .header_top{padding: 0 10px;}
 } 
