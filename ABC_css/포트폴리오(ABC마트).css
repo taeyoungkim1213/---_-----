@@ -516,7 +516,8 @@ input[name="md"]{display: none;}
     display: flex;
     flex-wrap: wrap;
     margin: 50px 0;
-    transform: rotateX('angle')
+    transform: rotateX('angle');
+    overflow: hidden;
 }
 .banner_left{
     position: relative;

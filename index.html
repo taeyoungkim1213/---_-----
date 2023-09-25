@@ -1258,18 +1258,19 @@ $(document).ready(function() {
 
         $(window).scroll(function(){
 // 핫딜 탑 닿으면 enw arrivals 나오기
-            if(h_o_top <= $(window).scrollTop() + 100) {
-                $('#new_sec').css({
-                    // transform: 'translateX(0)',
+            if(h_o_top <= $(window).scrollTop() - 150) {
+                $('.new_arrivals_box li').css({
+                    transform: 'rotateY(360deg)',
                     transition: 'all 0.5s', 
                     opacity: '1'
                 })
             }
             else {
-                $('#new_sec').css({
-                    // transform: 'translateX(-2000px)',
-                    transition: 'all 0.5s',
-                    opacity: '0',
+                $('.new_arrivals_box li').css({
+                    // rotate : '0deg',
+                    transform: 'rotateY(0deg)',
+                    transition: 'all 0.5s', 
+                    opacity: '1'
                 })
             }
 // md닿으면 배너 움직이기
