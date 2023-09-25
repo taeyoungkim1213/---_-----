@@ -9,6 +9,7 @@
 <br>
     1. -index 페이지-<br>
 :   쿠키 이용하여 레이어 팝업 창 닫기 , <br>
+    swiper 사용하여 메인 슬라이더 기능, <br>
     스크롤탑 HOT DEAL에 닿으면  NEW ARRIVALS의 css rotate,<br>
     스크롤탑 MD"S PICK에 닿으면  BANNER 사이드에서 튀어나옴.<br>
     가로 사이즈1200px, 900px 750px  반응형 적용,<br>
