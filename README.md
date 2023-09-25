@@ -1,5 +1,5 @@
 # 김태영 포트폴리오
->ABC MART (web)
+### [ABC MART (web)](https://taeyoungkim1213.github.io/) 
 
 </br>
 
@@ -15,7 +15,7 @@
 </br>
 
 ## :pushpin: Projects
- ### 1. [ABC MART](https://https://taeyoungkim1213.github.io/) 사이트 바로가기
+ ### 1. [ABC MART](https://taeyoungkim1213.github.io/) 사이트 바로가기
 
 >ABC마트 홈페이지(개인 프로젝트)  
 >개발 기간: 2023.09.18 ~ 2019.9.23  
