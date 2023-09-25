@@ -1,27 +1,24 @@
-# 한정수 포트폴리오
->캐치 프레이즈
+# 김태영 포트폴리오
+>ABC MART (web)
 
 </br>
 
 ## :pushpin: Intro
-(여기에 자기 소개)
+(안녕하세요 김태영입니다.)
 
 </br>
 
 ## :pushpin: Contact
-- 이메일: rhep0828@gmail.com
-- 블로그: https://ryan-han.com
-- 깃헙: https://github.com/integerous
+- 이메일: kty991213@naver.com
+- 깃헙: https://github.com/taeyoungkim1213
 
 </br>
 
 ## :pushpin: Projects
-### 1. [goQuality](https://github.com/Integerous/goQuality)
->고퀄리티 개발 컨텐츠 공유 서비스 (개인 프로젝트)  
->개발 기간: 2019.2.18 ~ 2019.4.5  
+### 1. [ABC MART](https://https://taeyoungkim1213.github.io/)
+>ABC마트 홈페이지(개인 프로젝트)  
+>개발 기간: 2023.09.18 ~ 2019.9.23  
 >  
 >기술 스택:  
->Java 8 / Spring Boot / Gradle / Spring Data JPA / QueryDSL  
->H2 / MySQL / Spring Security / Jsoup / Vue.js / Element U  
->  
->[프로젝트 상세 설명](https://github.com/Integerous/goQuality) 참고
+> HTML , CSS , jQuery , javaScript
+
