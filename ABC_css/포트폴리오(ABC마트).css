@@ -30,6 +30,7 @@ body{overflow-x: hidden;}
     font-style: italic;
 }
 .swiper-cube .swiper-cube-shadow:before {display: none;}
+.swiper-cube .swiper-cube-shadow{display: none;}
 
 /* 탑버튼 */
 #top_box{position: relative; top: -130px;}
