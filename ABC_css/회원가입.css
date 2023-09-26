@@ -237,7 +237,7 @@ main{
 }
 
 .error{
-    font-size: 1px;
+    font-size: 14px;
     height: 20px;
     color:red;
     font-weight: 700;

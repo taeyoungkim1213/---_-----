@@ -80,7 +80,7 @@ $(document).ready(function(){
 
     $('.detail_area').prepend(list)
     
-    // 색 옵션 이미 선택해놨었는지 확인하는 용도
+    // 사이즈 이미 선택해놨었는지 확인하는 용도
     let btn_chk = [false, false, false]; 
     // $('.color_box').click(function(){
     $(document).on('click', '.size_box', function(){
