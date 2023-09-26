@@ -154,9 +154,10 @@
 .cb_white { background-color: #fff;} */
 /* .cb_gray { background-color: #555;} */
 .btn_close_opt { 
-    background: gray;
+    width: 18px;
     color: #fff;
-    margin-left: 3px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .min_limit {
