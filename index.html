@@ -16,9 +16,26 @@
     <div class="wrap">
         <!-- 레이어팝업창 -->
         <div class="layer_parent">
+            <!-- Swiper -->
+           
             <div class="layer_box">
-                <div class="layer_img">
-                    <a href="#"><img src="./ABC_img/pop.jpg" alt=""></a>
+                <div class="swiper mySwiper_pop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./ABC_img/pop.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./ABC_img/pop1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./ABC_img/pop2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
                 
                 <div class="layer_close">
@@ -1149,6 +1166,9 @@
 <!-- Swiper JS ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ---->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+
+</script>
+
 <!-- 메인배너 Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -1228,6 +1248,33 @@
     })
     
     
+</script>
+<!-- pop -->
+<script>
+    var swiper_pop = new Swiper(".mySwiper_pop", {
+        slidesPerView: 1, // 칸 수
+        spaceBetween: 10, //gap
+        // freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+         // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,// 몇초마다 슬라이드 이동할지
+            pauseOnMouseEnter : true, 
+            
+        },
+        speed: 500, // 몇초만에 left 0 으로 도착할지
+        loop: true,
+        direction: 'horizontal', //horizontal,vertical 배치 방향
+        effect: 'cube' // 'slide', 'fade', 'cube', 'coverflow', 'flip' or 'creative'
+    });
+
 </script>
 <script>
 // 레이어팝업 닫기

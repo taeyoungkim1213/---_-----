@@ -3,11 +3,13 @@ body{overflow-x: hidden;}
 .layer_parent{position: relative; left: 0;}
 .layer_box img{width: 100%;}
 .layer_box{
+    width: 400px;
     position: absolute;
     left: 150px;
     top: 150px;
     z-index: 99;
     background-color: #666;
+    overflow: hidden;
 }
 .layer_img{width: 100%;}
 .layer_close{
@@ -27,6 +29,7 @@ body{overflow-x: hidden;}
 .layer_close span:hover{
     font-style: italic;
 }
+.swiper-cube .swiper-cube-shadow:before {display: none;}
 
 /* 탑버튼 */
 #top_box{position: relative; top: -130px;}
