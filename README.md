@@ -3,7 +3,8 @@
 
 </br>
 
-## :pushpin: ABC MART 포폴 소개
+## :pushpin: ABC MART 포폴 소개<br>
+기획 의도 : 백엔드 기술을 쓰지않고 Java Script 만으로 백엔드 기술을 구현해보고자 제작하였습니다.
 
     -ABX MART 기능 소개-
 <br>
