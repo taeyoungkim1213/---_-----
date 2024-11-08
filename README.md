@@ -57,7 +57,7 @@
 </br>
 
 ## :pushpin: Projects
- ### 1. [ABC MART](https://taeyoungkim1213.github.io/) 사이트 바로가기
+ ### 1. [ABC MART]([https://taeyoungkim1213.github.io/](https://taeyoungkim1213.github.io/ABC_portfolio.github.io/)) 사이트 바로가기
 
 
 
